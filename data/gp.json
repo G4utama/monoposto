@@ -93,5 +93,10 @@
         "name": "Italy",
         "name_short": "ITA",
         "date": "2025-09-07"
+    },
+    {
+        "name": "Azerbaijan",
+        "name_short": "AZE",
+        "date": "2025-09-21"
     }
 ]
