@@ -1,0 +1,97 @@
+[
+    {
+        "name": "Australia",
+        "name_short": "AUS",
+        "date": "2025-03-16"
+    },
+    {
+        "name": "China*",
+        "name_short": "CHN*",
+        "date": "2025-03-22"
+    },
+    {
+        "name": "China",
+        "name_short": "CHN",
+        "date": "2025-03-23"
+    },
+    {
+        "name": "Japan",
+        "name_short": "JPN",
+        "date": "2025-04-06"
+    },
+    {
+        "name": "Bahrain",
+        "name_short": "BHR",
+        "date": "2025-04-13"
+    },
+    {
+        "name": "Saudi Arabia",
+        "name_short": "SAU",
+        "date": "2025-04-20"
+    },
+    {
+        "name": "United_States_of_America*",
+        "name_short": "USA*",
+        "date": "2025-05-03"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "2025-05-04"
+    },
+    {
+        "name": "Italy",
+        "name_short": "ITA",
+        "date": "2025-05-18"
+    },
+    {
+        "name": "Monaco",
+        "name_short": "MON",
+        "date": "2025-05-25"
+    },
+    {
+        "name": "Spain",
+        "name_short": "ESP",
+        "date": "2025-06-01"
+    },
+    {
+        "name": "Canada",
+        "name_short": "CAN",
+        "date": "2025-06-15"
+    },
+    {
+        "name": "Austria",
+        "name_short": "AUT",
+        "date": "2025-06-29"
+    },
+    {
+        "name": "United_Kingdom",
+        "name_short": "GBR",
+        "date": "2025-07-06"
+    },
+    {
+        "name": "Belgium*",
+        "name_short": "BEL*",
+        "date": "2025-07-26"
+    },
+    {
+        "name": "Belgium",
+        "name_short": "BEL",
+        "date": "2025-07-27"
+    },
+    {
+        "name": "Hungary",
+        "name_short": "HUN",
+        "date": "2025-08-03"
+    },
+    {
+        "name": "Netherlands",
+        "name_short": "NLD",
+        "date": "2025-08-31"
+    },
+    {
+        "name": "Italy",
+        "name_short": "ITA",
+        "date": "2025-09-07"
+    }
+]
