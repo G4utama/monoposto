@@ -13,7 +13,7 @@ fetch('data/drivers.json')
                 <tr>
                     <th></th>
                     ${gp.map(gpData => `
-                        <th class="flag"><img src="assets/flag/${gpData.name.replace('*', '')}.png">${gpData.name_short}</th>
+                        <th class="flag"><img src="assets/flag/${gpData.name.replace('*', '')}.png"><br>${gpData.name_short}</th>
                     `).join('')}
                     <th>Tot</th>
                 </tr>
@@ -51,7 +51,7 @@ fetch('data/drivers.json')
                         ''};
                         text-decoration-color: rgb(255, 0, 255);
                         ">${driver.points[index].toString().replace('.5', '')}</td>`).join('')}
-                    <td style="color: ${driver.borderColor};">${driver.points_sum[driver.points_sum.length - 1]}</td>
+                    <td style="color: ${driver.borderColor};">${driver.points_sum[driver.points_sum.length - 1] || 0}</td>
                 </tr>
                 `).join('')}
             </table>

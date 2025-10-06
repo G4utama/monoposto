@@ -98,5 +98,10 @@
         "name": "Azerbaijan",
         "name_short": "AZE",
         "date": "2025-09-21"
+    },
+    {
+        "name": "Singapore",
+        "name_short": "SGP",
+        "date": "2025-10-05"
     }
 ]
