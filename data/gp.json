@@ -103,5 +103,15 @@
         "name": "Singapore",
         "name_short": "SGP",
         "date": "2025-10-05"
+    },
+    {
+        "name": "United_States_of_America*",
+        "name_short": "USA*",
+        "date": "2025-10-18"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "2025-10-19"
     }
 ]
