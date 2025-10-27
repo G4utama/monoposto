@@ -42,6 +42,7 @@ h1{
 
 h2{
     font-size: 1.5em;
+    margin-top: 1em;
 }
 
 /* p{
@@ -77,7 +78,7 @@ table{
 th, td{
     text-align: center;
     border-bottom: 1px solid var(--lightGray);
-    padding: 0.75em;
+    padding: 1em;
 }
 
 table tr th:first-child, table tr td:first-child{

@@ -13,7 +13,10 @@ fetch('data/drivers.json')
                 <tr>
                     <th></th>
                     ${gp.map(gpData => `
-                        <th class="flag"><img src="assets/flag/${gpData.name.replace('*', '')}.png"><br>${gpData.name_short}</th>
+                        <th class="flag">
+                            <img src="assets/flag/${gpData.name.replace('*', '')}.png">
+                            ${gpData.name_short}
+                        </th>
                     `).join('')}
                     <th>Tot</th>
                 </tr>

@@ -1,7 +1,11 @@
-html{
+h1, h2{
+    font-size: 2em;
+}
+
+table{
     font-size: 0.7em;
 }
 
 .flag img{
-    width: 50%;
+    width: 16px;
 }
