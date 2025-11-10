@@ -118,5 +118,15 @@
         "name": "Mexico",
         "name_short": "MEX",
         "date": "2025-10-26"
+    },
+    {
+        "name": "Brazil*",
+        "name_short": "BRA*",
+        "date": "2025-11-08"
+    },
+    {
+        "name": "Brazil",
+        "name_short": "BRA",
+        "date": "2025-11-09"
     }
 ]
