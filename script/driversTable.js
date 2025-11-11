@@ -1,9 +1,9 @@
-fetch('data/drivers.json')
-.then(response => response.json())
-.then(drivers => {
-    fetch('data/gp.json')
-    .then(response => response.json())
-    .then(gp => {
+const createDriversTable = async () => {
+    try {
+        const drivers = await loadJsonData('data/drivers.json');
+        const gp = await loadJsonData('data/gp.json');
+        if (!drivers || !gp) return;
+
         // Sort the drivers based on their points_sum values in descending order
         drivers.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
 
@@ -12,7 +12,7 @@ fetch('data/drivers.json')
             <table>
                 <tr>
                     <th></th>
-                    ${gp.map(gpData => `
+                    ${gp.map(gpData => ` 
                         <th class="flag">
                             <img src="assets/flag/${gpData.name.replace('*', '')}.png">
                             ${gpData.name_short}
@@ -21,9 +21,9 @@ fetch('data/drivers.json')
                     <th>Tot</th>
                 </tr>
                 <tr>
-                    ${drivers.map(driver => `
+                    ${drivers.map(driver => ` 
                     <td style="color: ${driver.borderColor};">${driver.name}</td>
-                    ${gp.map((gpData, index) => `<td style="
+                    ${gp.map((gpData, index) => `<td style=" 
                         color: ${
                             driver.points[index] === 25 ? driver.borderColor : 
                             driver.points[index] === "25.5" ? driver.borderColor : 
@@ -45,9 +45,9 @@ fetch('data/drivers.json')
                             gpData.name.endsWith('*') && driver.points[index] === 8 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
                             gpData.name.endsWith('*') && driver.points[index] === "8.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
                             gpData.name.endsWith('*') && driver.points[index] === 7 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === "7.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === 6 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === "6.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
+                            gpData.name.endsWith('*') && driver.points[index] === "7.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)`:
+                            gpData.name.endsWith('*') && driver.points[index] === 6 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)`:
+                            gpData.name.endsWith('*') && driver.points[index] === "6.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)`:
                         ''}; 
                         text-decoration: ${
                             driver.points[index].toString().endsWith('.5') ? 'underline' :
@@ -60,5 +60,9 @@ fetch('data/drivers.json')
             </table>
         `;
         document.getElementById('driversTable').innerHTML = tableHtml;
-    });
-});
+    } catch (error) {
+        console.log('An error occurred while fetching data for the drivers table:', error);
+    }
+};
+
+createDriversTable();

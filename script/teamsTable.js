@@ -1,9 +1,9 @@
-fetch('data/teams.json')
-.then(response => response.json())
-.then(teams => {
-    fetch('data/gp.json')
-    .then(response => response.json())
-    .then(gp => {
+const createTeamsTable = async () => {
+    try {
+        const teams = await loadJsonData('data/teams.json');
+        const gp = await loadJsonData('data/gp.json');
+        if (!teams || !gp) return;
+
         // Sort the teams based on their points_sum values in descending order
         teams.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
 
@@ -12,7 +12,7 @@ fetch('data/teams.json')
             <table>
                 <tr>
                     <th></th>
-                    ${gp.map(gpData => `
+                    ${gp.map(gpData => ` 
                         <th class="flag">
                             <img src="assets/flag/${gpData.name.replace('*', '')}.png">
                             ${gpData.name_short}
@@ -45,5 +45,9 @@ fetch('data/teams.json')
             </table>
         `;
         document.getElementById('teamsTable').innerHTML = tableHtml;
-    });
-});
+    } catch (error) {
+        console.log('An error occurred while fetching data for the teams table:', error);
+    }
+};
+
+createTeamsTable();

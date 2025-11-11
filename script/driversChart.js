@@ -1,7 +1,9 @@
-const createDriversChartData = (drivers, gp) => {
+const createDriversChartData = async (driverNames, gp) => {
+    const drivers = await loadJsonData('data/drivers.json');
+    const filteredDrivers = drivers.filter(driver => driverNames.includes(driver.name) || driverNames.includes(driver.id));
     const chartData = {
         labels: gp.map(gpData => gpData.name_short),
-        datasets: drivers.map(driver => ({
+        datasets: filteredDrivers.map(driver => ({
             label: driver.name,
             data: driver.points_sum,
             borderColor: driver.borderColor,
@@ -17,7 +19,8 @@ const createDriversChart = async () => {
     const gp = await loadJsonData('data/gp.json');
     if (!drivers || !gp) return;
 
-    const chartData = createDriversChartData(drivers, gp);
+    const driverNames = ['NOR', 'PIA', 'LEC', 'HAM', 'VER', 'TSU', 'RUS', 'ANT', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD', 'ALB','SAI', 'HUL', 'BOR']; // replace with your list of driver names or IDs
+    const chartData = await createDriversChartData(driverNames, gp);
     const ctx = document.getElementById('driversChart').getContext('2d');
     const driversChart = new Chart(ctx, {
         type: 'line',
