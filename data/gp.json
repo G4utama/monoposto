@@ -128,5 +128,10 @@
         "name": "Brazil",
         "name_short": "BRA",
         "date": "2025-11-09"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "2025-11-23"
     }
 ]

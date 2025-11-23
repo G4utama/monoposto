@@ -19,9 +19,10 @@ const createDriversTable = async () => {
                         </th>
                     `).join('')}
                     <th>Tot</th>
+                    <th>Gap</th>
                 </tr>
                 <tr>
-                    ${drivers.map(driver => ` 
+                    ${drivers.map((driver, index) => ` 
                     <td style="color: ${driver.borderColor};">${driver.name}</td>
                     ${gp.map((gpData, index) => `<td style=" 
                         color: ${
@@ -31,7 +32,8 @@ const createDriversTable = async () => {
                             driver.points[index] === "0.5" ? 'rgba(255, 255, 255, 0.25)' : 
                             driver.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                             driver.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
-                            driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' : 
+                            driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :
+                            driver.points[index] === "DSQ.5" ? 'rgba(255, 0, 0, 0.5)' : 
                             gpData.name.endsWith('*') && driver.points[index] === 8 ? driver.borderColor : 
                             gpData.name.endsWith('*') && driver.points[index] === "8.5" ? driver.borderColor :
                         ''}; 
@@ -42,12 +44,13 @@ const createDriversTable = async () => {
                             driver.points[index] === "18.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` : 
                             driver.points[index] === 15 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
                             driver.points[index] === "15.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === 8 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === "8.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === 7 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                            gpData.name.endsWith('*') && driver.points[index] === "7.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)`:
-                            gpData.name.endsWith('*') && driver.points[index] === 6 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)`:
-                            gpData.name.endsWith('*') && driver.points[index] === "6.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)`:
+                            gpData.name.endsWith('*') && driver.points[index] === 8 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
+                            gpData.name.endsWith('*') && driver.points[index] === "8.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
+                            gpData.name.endsWith('*') && driver.points[index] === 7 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
+                            gpData.name.endsWith('*') && driver.points[index] === "7.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
+                            gpData.name.endsWith('*') && driver.points[index] === 6 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
+                            gpData.name.endsWith('*') && driver.points[index] === "6.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
+                            gpData.name.endsWith('*') ? `rgba(255, 255, 255, 0.05)`:
                         ''}; 
                         text-decoration: ${
                             driver.points[index].toString().endsWith('.5') ? 'underline' :
@@ -55,6 +58,14 @@ const createDriversTable = async () => {
                         text-decoration-color: rgb(255, 0, 255);
                         ">${driver.points[index].toString().replace('.5', '')}</td>`).join('')}
                     <td style="color: ${driver.borderColor};">${driver.points_sum[driver.points_sum.length - 1] || 0}</td>
+                    <td style="color: ${driver.borderColor};">
+                        ${index > 0
+                            ? (drivers[index - 1].points_sum[drivers[index - 1].points_sum.length - 1] - (driver.points_sum[driver.points_sum.length - 1] || 0)) !== 0
+                                ? '-' + (drivers[index - 1].points_sum[drivers[index - 1].points_sum.length - 1] - (driver.points_sum[driver.points_sum.length - 1] || 0))
+                                : '='
+                            : ''
+                        }
+                    </td>
                 </tr>
                 `).join('')}
             </table>

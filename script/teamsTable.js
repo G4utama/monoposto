@@ -19,8 +19,9 @@ const createTeamsTable = async () => {
                         </th>
                     `).join('')}
                     <th>Tot</th>
+                    <th>Gap</th>
                 </tr>
-                ${teams.map(team => `
+                ${teams.map((team, index) => `
                 <tr>
                     <td style="color: ${team.borderColor};">${team.name}</td>
                     ${gp.map((gpData, index) => `<td style="
@@ -31,8 +32,12 @@ const createTeamsTable = async () => {
                             team.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                             team.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
                             team.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' : 
+                            team.points[index] === "DSQ.5" ? 'rgba(255, 0, 0, 0.5)' :
                             gpData.name.endsWith('*') && team.points[index] === 15 ? team.borderColor :
                             gpData.name.endsWith('*') && team.points[index] === "15.5" ? team.borderColor :
+                        ''};
+                        background-color: ${
+                            gpData.name.endsWith('*') ? `rgba(255, 255, 255, 0.05)`:
                         ''};
                         text-decoration: ${
                             team.points[index].toString().endsWith('.5') ? 'underline' :
@@ -40,6 +45,14 @@ const createTeamsTable = async () => {
                         text-decoration-color: rgb(255, 0, 255);
                         ">${team.points[index].toString().replace('.5', '')}</td>`).join('')}
                     <td style="color: ${team.borderColor};">${team.points_sum[team.points_sum.length - 1]}</td>
+                    <td style="color: ${team.borderColor};">
+                        ${index > 0
+                            ? (teams[index - 1].points_sum[teams[index - 1].points_sum.length - 1] - (team.points_sum[team.points_sum.length - 1] || 0)) !== 0
+                                ? '-' + (teams[index - 1].points_sum[teams[index - 1].points_sum.length - 1] - (team.points_sum[team.points_sum.length - 1] || 0))
+                                : '='
+                            : ''
+                        }
+                    </td>
                 </tr>
                 `).join('')}
             </table>
