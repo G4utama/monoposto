@@ -133,5 +133,15 @@
         "name": "United_States_of_America",
         "name_short": "USA",
         "date": "2025-11-23"
+    },
+    {
+        "name": "Qatar*",
+        "name_short": "QAT*",
+        "date": "2025-11-29"
+    },
+    {
+        "name": "Qatar",
+        "name_short": "QAT",
+        "date": "2025-11-30"
     }
 ]
