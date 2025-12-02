@@ -61,7 +61,7 @@ a, a:hover{
 
 table, canvas{
     margin: 2em auto;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 canvas {
@@ -72,16 +72,21 @@ table{
     max-width: 1920px;
     border-collapse: collapse;
     table-layout: fixed;
-    width: 100%;
+    width: 100%;   
+    overflow-x: auto;
+    display: flex;
 }
 
 th, td{
     text-align: center;
     border-bottom: 1px solid var(--lightGray);
     padding: 1em;
+    min-width: 64px;
+    max-width: 64px;
+    box-sizing: border-box;
 }
 
-table tr th:first-child, table tr td:first-child{
+table tr th:first-child, table tr td:first-child, table tr th:nth-child(2), table tr td:nth-child(2){
     border-right: 3px solid var(--lightGray);
 }
 
@@ -184,6 +189,7 @@ table tr:last-child{
 .legend{
     text-align: center;
     margin: 0 auto;
+    max-width: 256px;
 }
 
 .winner{
@@ -193,7 +199,7 @@ table tr:last-child{
 .podium{
     background-color: rgba(255, 128, 0, 0.25);
     padding: 1px 3px;
-    display: inline;
+    /* display: inline; */
 }
 
 .pole{
@@ -204,7 +210,7 @@ table tr:last-child{
 .sprint{
     background-color: rgba(255, 255, 255, 0.05);
     padding: 1px 3px;
-    display: inline;
+    /* display: inline; */
 }
 
 .dnf, .dsq, .dns{

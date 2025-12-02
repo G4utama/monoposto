@@ -11,7 +11,8 @@ const createTeamsTable = async () => {
         const tableHtml = `
             <table>
                 <tr>
-                    <th></th>
+                    <th>Pos</th>
+                    <th>Team</th>
                     ${gp.map(gpData => ` 
                         <th class="flag">
                             <img src="assets/flag/${gpData.name.replace('*', '')}.png">
@@ -21,8 +22,9 @@ const createTeamsTable = async () => {
                     <th>Tot</th>
                     <th>Gap</th>
                 </tr>
-                ${teams.map((team, index) => `
                 <tr>
+                    ${teams.map((team, index) => `
+                    <td>${index + 1}</td>
                     <td style="color: ${team.borderColor};">${team.name}</td>
                     ${gp.map((gpData, index) => `<td style="
                         color: ${
@@ -37,13 +39,11 @@ const createTeamsTable = async () => {
                             gpData.name.endsWith('*') && team.points[index] === "15.5" ? team.borderColor :
                         ''};
                         background-color: ${
+                            gpData.name.endsWith('*') && team.points[index].toString().endsWith('.podium') ? `rgba(${team.borderColor.slice(4, -1)}, 0.15)` :
+                            team.points[index].toString().endsWith('.podium') ? `rgba(${team.borderColor.slice(4, -1)}, 0.25)` :
                             gpData.name.endsWith('*') ? `rgba(255, 255, 255, 0.05)`:
                         ''};
-                        text-decoration: ${
-                            team.points[index].toString().endsWith('.5') ? 'underline' :
-                        ''};
-                        text-decoration-color: rgb(255, 0, 255);
-                        ">${team.points[index].toString().replace('.5', '')}</td>`).join('')}
+                        ">${team.points[index].toString().replace('.podium', '')}</td>`).join('')}
                     <td style="color: ${team.borderColor};">${team.points_sum[team.points_sum.length - 1]}</td>
                     <td style="color: ${team.borderColor};">
                         ${index > 0

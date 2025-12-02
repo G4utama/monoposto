@@ -11,18 +11,20 @@ const createDriversTable = async () => {
         const tableHtml = `
             <table>
                 <tr>
-                    <th></th>
+                    <th>Pos</th>
+                    <th>Driver</th>
                     ${gp.map(gpData => ` 
                         <th class="flag">
                             <img src="assets/flag/${gpData.name.replace('*', '')}.png">
                             ${gpData.name_short}
                         </th>
                     `).join('')}
-                    <th>Tot</th>
+                    <th>Pts</th>
                     <th>Gap</th>
                 </tr>
                 <tr>
                     ${drivers.map((driver, index) => ` 
+                    <td>${index + 1}</td>
                     <td style="color: ${driver.borderColor};">${driver.name}</td>
                     ${gp.map((gpData, index) => `<td style=" 
                         color: ${
