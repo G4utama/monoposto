@@ -1,4 +1,4 @@
-const createDriversChartData2 = async (driverNames, gp) => {
+const createDriversChartData3 = async (driverNames, gp) => {
     const drivers = await loadJsonData('data/drivers.json');
     const filteredDrivers = drivers.filter(driver => driverNames.includes(driver.name) || driverNames.includes(driver.id));
     const chartData = {
@@ -14,14 +14,14 @@ const createDriversChartData2 = async (driverNames, gp) => {
     return chartData;
 };
 
-const createDriversChart2 = async () => {
+const createDriversChart3 = async () => {
     const drivers = await loadJsonData('data/drivers.json');
     const gp = await loadJsonData('data/gp.json');
     if (!drivers || !gp) return;
 
-    const driverNames = ['LEC', 'HAM', 'RUS', 'ANT']; // replace with your list of driver names or IDs
-    const chartData = await createDriversChartData2(driverNames, gp);
-    const ctx = document.getElementById('driversChart2').getContext('2d');
+    const driverNames = ['TSU', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD',  'ALB', 'SAI', 'HUL', 'BOR']; // replace with your list of driver names or IDs
+    const chartData = await createDriversChartData3(driverNames, gp);
+    const ctx = document.getElementById('driversChart3').getContext('2d');
     const driversChart = new Chart(ctx, {
         type: 'line',
         data: chartData,
@@ -70,4 +70,4 @@ const createDriversChart2 = async () => {
     });
 };
 
-createDriversChart2();
+createDriversChart3();

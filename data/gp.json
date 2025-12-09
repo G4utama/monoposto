@@ -143,5 +143,10 @@
         "name": "Qatar",
         "name_short": "QAT",
         "date": "2025-11-30"
+    },
+    {
+        "name": "United_Arab_Emirates",
+        "name_short": "UAE",
+        "date": "2025-12-07"
     }
 ]

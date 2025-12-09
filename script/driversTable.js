@@ -5,7 +5,16 @@ const createDriversTable = async () => {
         if (!drivers || !gp) return;
 
         // Sort the drivers based on their points_sum values in descending order
-        drivers.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
+        // drivers.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
+        drivers.sort((a, b) => {
+            const aLastPointSum = a.points_sum[a.points_sum.length - 1];
+            const bLastPointSum = b.points_sum[b.points_sum.length - 1];
+            if (aLastPointSum !== bLastPointSum) {
+                return bLastPointSum - aLastPointSum;
+            } else {
+                return b.sort - a.sort;
+            }
+        });
 
         // Create table data
         const tableHtml = `
