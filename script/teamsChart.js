@@ -14,14 +14,13 @@ const createTeamsChartData = async (teamNames, gp) => {
     return chartData;
 };
 
-const createTeamsChart = async () => {
+const createTeamsChart = async (teamNames, elementId) => {
     const teams = await loadJsonData('data/teams.json');
     const gp = await loadJsonData('data/gp.json');
     if (!teams || !gp) return;
 
-    const teamNames = ['MCL','FER', 'RED', 'MER', 'AST', 'ALP', 'HAA', 'RAC', 'WIL', 'SAU']; // replace with your list of team names or IDs
     const chartData = await createTeamsChartData(teamNames, gp);
-    const ctx = document.getElementById('teamsChart').getContext('2d');
+    const ctx = document.getElementById(elementId).getContext('2d');
     const teamsChart = new Chart(ctx, {
         type: 'line',
         data: chartData,
@@ -70,4 +69,6 @@ const createTeamsChart = async () => {
     });
 };
 
-createTeamsChart();
+createTeamsChart(['MCL','FER', 'RED', 'MER', 'AST', 'ALP', 'HAA', 'RAC', 'WIL', 'SAU'], 'teamsChart');
+createTeamsChart(['FER', 'RED', 'MER'], 'teamsChartTop');
+createTeamsChart(['AST', 'ALP', 'HAA', 'RAC', 'WIL', 'SAU'], 'teamsChartBottom');

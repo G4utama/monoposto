@@ -14,14 +14,13 @@ const createDriversChartData = async (driverNames, gp) => {
     return chartData;
 };
 
-const createDriversChart = async () => {
+const createDriversChart = async (driverNames, elementId) => {
     const drivers = await loadJsonData('data/drivers.json');
     const gp = await loadJsonData('data/gp.json');
     if (!drivers || !gp) return;
 
-    const driverNames = ['NOR', 'PIA', 'LEC', 'HAM', 'VER', 'TSU', 'RUS', 'ANT', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD', 'ALB','SAI', 'HUL', 'BOR']; // replace with your list of driver names or IDs
     const chartData = await createDriversChartData(driverNames, gp);
-    const ctx = document.getElementById('driversChart').getContext('2d');
+    const ctx = document.getElementById(elementId).getContext('2d');
     const driversChart = new Chart(ctx, {
         type: 'line',
         data: chartData,
@@ -70,4 +69,6 @@ const createDriversChart = async () => {
     });
 };
 
-createDriversChart();
+createDriversChart(['NOR', 'PIA', 'LEC', 'HAM', 'VER', 'TSU', 'RUS', 'ANT', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD', 'ALB','SAI', 'HUL', 'BOR'], 'driversChart');
+createDriversChart(['LEC', 'HAM', 'RUS', 'ANT'], 'driversChartTop');
+createDriversChart(['TSU', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD',  'ALB', 'SAI', 'HUL', 'BOR'], 'driversChartBottom');
