@@ -12,7 +12,7 @@ const createTeamsTable = async () => {
             <table>
                 <tr>
                     <th>Pos</th>
-                    <th>Team</th>
+                    <th>T</th>
                     ${gp.map(gpData => ` 
                         <th class="flag">
                             <img src="assets/flag/${gpData.name.replace('*', '')}.png">

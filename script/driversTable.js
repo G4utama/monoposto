@@ -21,7 +21,7 @@ const createDriversTable = async () => {
             <table>
                 <tr>
                     <th>Pos</th>
-                    <th>Driver</th>
+                    <th>D</th>
                     ${gp.map(gpData => ` 
                         <th class="flag">
                             <img src="assets/flag/${gpData.name.replace('*', '')}.png">
