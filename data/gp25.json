@@ -2,150 +2,151 @@
     {
         "name": "Australia",
         "name_short": "AUS",
-        "date": ""
+        "date": "2025-03-16"
     },
     {
         "name": "China*",
         "name_short": "CHN*",
-        "date": ""
+        "date": "2025-03-22"
     },
     {
         "name": "China",
         "name_short": "CHN",
-        "date": ""
+        "date": "2025-03-23"
     },
     {
         "name": "Japan",
         "name_short": "JPN",
-        "date": ""
+        "date": "2025-04-06"
     },
     {
         "name": "Bahrain",
         "name_short": "BHR",
-        "date": ""
+        "date": "2025-04-13"
     },
     {
         "name": "Saudi Arabia",
         "name_short": "SAU",
-        "date": ""
+        "date": "2025-04-20"
     },
     {
         "name": "United_States_of_America*",
         "name_short": "USA*",
-        "date": ""
+        "date": "2025-05-03"
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": ""
-    },
-    {
-        "name": "Canada*",
-        "name_short": "CAN*",
-        "date": ""
-    },{
-        "name": "Canada",
-        "name_short": "CAN",
-        "date": ""
-    },
-    {
-        "name": "Monaco",
-        "name_short": "MON",
-        "date": ""
-    },
-    {
-        "name": "Spain",
-        "name_short": "ESP",
-        "date": ""
-    },
-    {
-        "name": "Austria",
-        "name_short": "AUT",
-        "date": ""
-    },
-    {
-        "name": "United_Kingdom*",
-        "name_short": "GBR*",
-        "date": ""
-    },
-    {
-        "name": "United_Kingdom",
-        "name_short": "GBR",
-        "date": ""
-    },
-    {
-        "name": "Belgium",
-        "name_short": "BEL",
-        "date": ""
-    },
-    {
-        "name": "Hungary",
-        "name_short": "HUN",
-        "date": ""
-    },
-    {
-        "name": "Netherlands*",
-        "name_short": "NLD*",
-        "date": ""
-    },
-    {
-        "name": "Netherlands",
-        "name_short": "NLD",
-        "date": ""
+        "date": "2025-05-04"
     },
     {
         "name": "Italy",
         "name_short": "ITA",
-        "date": ""
+        "date": "2025-05-18"
+    },
+    {
+        "name": "Monaco",
+        "name_short": "MON",
+        "date": "2025-05-25"
     },
     {
         "name": "Spain",
         "name_short": "ESP",
-        "date": ""
+        "date": "2025-06-01"
+    },
+    {
+        "name": "Canada",
+        "name_short": "CAN",
+        "date": "2025-06-15"
+    },
+    {
+        "name": "Austria",
+        "name_short": "AUT",
+        "date": "2025-06-29"
+    },
+    {
+        "name": "United_Kingdom",
+        "name_short": "GBR",
+        "date": "2025-07-06"
+    },
+    {
+        "name": "Belgium*",
+        "name_short": "BEL*",
+        "date": "2025-07-26"
+    },
+    {
+        "name": "Belgium",
+        "name_short": "BEL",
+        "date": "2025-07-27"
+    },
+    {
+        "name": "Hungary",
+        "name_short": "HUN",
+        "date": "2025-08-03"
+    },
+    {
+        "name": "Netherlands",
+        "name_short": "NLD",
+        "date": "2025-08-31"
+    },
+    {
+        "name": "Italy",
+        "name_short": "ITA",
+        "date": "2025-09-07"
     },
     {
         "name": "Azerbaijan",
         "name_short": "AZE",
-        "date": ""
-    },
-    {
-        "name": "Singapore*",
-        "name_short": "SGP*",
-        "date": ""
+        "date": "2025-09-21"
     },
     {
         "name": "Singapore",
         "name_short": "SGP",
-        "date": ""
+        "date": "2025-10-05"
+    },
+    {
+        "name": "United_States_of_America*",
+        "name_short": "USA*",
+        "date": "2025-10-18"
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": ""
+        "date": "2025-10-19"
     },
     {
         "name": "Mexico",
         "name_short": "MEX",
-        "date": ""
+        "date": "2025-10-26"
+    },
+    {
+        "name": "Brazil*",
+        "name_short": "BRA*",
+        "date": "2025-11-08"
     },
     {
         "name": "Brazil",
         "name_short": "BRA",
-        "date": ""
+        "date": "2025-11-09"
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": ""
+        "date": "2025-11-23"
+    },
+    {
+        "name": "Qatar*",
+        "name_short": "QAT*",
+        "date": "2025-11-29"
     },
     {
         "name": "Qatar",
         "name_short": "QAT",
-        "date": ""
+        "date": "2025-11-30"
     },
     {
         "name": "United_Arab_Emirates",
         "name_short": "UAE",
-        "date": ""
+        "date": "2025-12-07"
     }
 ]

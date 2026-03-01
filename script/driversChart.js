@@ -69,6 +69,6 @@ const createDriversChart = async (driverNames, elementId) => {
     });
 };
 
-createDriversChart(['NOR', 'PIA', 'LEC', 'HAM', 'VER', 'TSU', 'RUS', 'ANT', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD', 'ALB','SAI', 'HUL', 'BOR'], 'driversChart');
-createDriversChart(['LEC', 'HAM', 'RUS', 'ANT'], 'driversChartTop');
-createDriversChart(['TSU', 'ALO', 'STR', 'GAS', 'COL', 'DOH', 'OCO', 'BEA', 'LAW', 'HAD',  'ALB', 'SAI', 'HUL', 'BOR'], 'driversChartBottom');
+createDriversChart(['NOR', 'PIA', 'RUS', 'ANT', 'VER', 'HAD', 'LEC', 'HAM', 'ALB', 'SAI', 'LAW', 'LIN', 'ALO', 'STR', 'OCO', 'BEA', 'HUL', 'BOR', 'GAS', 'COL', 'PER', 'BOT'], 'driversChart');
+createDriversChart(['NOR', 'PIA', 'RUS', 'ANT', 'VER', 'HAD', 'LEC', 'HAM'], 'driversChartTop');
+createDriversChart(['ALB', 'SAI', 'LAW', 'LIN', 'ALO', 'STR', 'OCO', 'BEA', 'HUL', 'BOR', 'GAS', 'COL', 'PER', 'BOT'], 'driversChartBottom');
