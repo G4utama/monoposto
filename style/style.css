@@ -102,6 +102,29 @@ table tr:last-child{
     border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
+#archiveTable{
+    display: inline-block;
+}
+
+#archiveTable td{
+    min-width: 96px;
+    border-top: 3px solid var(--lightGray);
+    border-right: none;
+    border-left: none;
+}
+
+#archiveTable td:nth-child(3), #archiveTable td:nth-child(4){
+    border-right: 3px solid var(--lightGray);
+}
+
+#archiveTable img{
+    margin: 4px 0;
+}
+
+#archiveTable td:nth-child(1) img, #archiveTable td:nth-child(2) img, #archiveTable td:nth-child(6) img, #archiveTable td:nth-child(7) img{
+    width: 48px;
+}
+
 /* #driversTable, #teamsTable{
     box-sizing: border-box;
 } */
