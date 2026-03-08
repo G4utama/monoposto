@@ -29,12 +29,11 @@ const createTeamsTable = async () => {
                     ${gp.map((gpData, index) => `<td style="
                         color: ${
                             team.points[index] === 43 ? team.borderColor : 
-                            team.points[index] === "43.5" ? team.borderColor :
+                            team.points[index] === "43.podium" ? team.borderColor :
                             team.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                             team.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                             team.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
                             team.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' : 
-                            team.points[index] === "DSQ.5" ? 'rgba(255, 0, 0, 0.5)' :
                             gpData.name.endsWith('*') && team.points[index] === 15 ? team.borderColor :
                             gpData.name.endsWith('*') && team.points[index] === "15.5" ? team.borderColor :
                         ''};
