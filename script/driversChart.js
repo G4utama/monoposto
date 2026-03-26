@@ -36,7 +36,6 @@ const createDriversChart = async (driverNames, elementId) => {
                     align: 'end',
                     anchor: 'end',
                     font: {
-                        // family: 'Courier New',
                         size: 10,
                         style: 'normal',
                         weight: 'normal'

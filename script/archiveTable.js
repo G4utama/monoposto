@@ -53,6 +53,7 @@ const createArchiveTable = async () => {
             <tr><td colspan="7">...</td></tr>
         </table>
     `;
+    
     document.getElementById('archiveTable').innerHTML = tableHtml;
 };
 
