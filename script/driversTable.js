@@ -34,35 +34,26 @@ const createDriversTable = async () => {
                 ${gp.map((gpData, index) => `<td style=" 
                     color: ${
                         driver.points[index] === 25 ? driver.borderColor : 
-                        driver.points[index] === "25.5" ? driver.borderColor : 
                         driver.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
-                        driver.points[index] === "0.5" ? 'rgba(255, 255, 255, 0.25)' : 
                         driver.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                         driver.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
                         driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :
-                        driver.points[index] === "DSQ.5" ? 'rgba(255, 0, 0, 0.5)' : 
                         gpData.name.endsWith('*') && driver.points[index] === 8 ? driver.borderColor : 
                         gpData.name.endsWith('*') && driver.points[index] === "8.5" ? driver.borderColor :
                         ''
                     }; 
                     background-color: ${
                         driver.points[index] === 25 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                        driver.points[index] === "25.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
                         driver.points[index] === 18 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                        driver.points[index] === "18.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` : 
                         driver.points[index] === 15 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                        driver.points[index] === "15.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
                         gpData.name.endsWith('*') && driver.points[index] === 8 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
-                        gpData.name.endsWith('*') && driver.points[index] === "8.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
                         gpData.name.endsWith('*') && driver.points[index] === 7 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
-                        gpData.name.endsWith('*') && driver.points[index] === "7.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
                         gpData.name.endsWith('*') && driver.points[index] === 6 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
-                        gpData.name.endsWith('*') && driver.points[index] === "6.5" ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
                         gpData.name.endsWith('*') ? `rgba(255, 255, 255, 0.05)`:
                         ''
                     }; 
                     text-decoration: ${
-                        driver.points[index].toString().endsWith('.5') ? 'underline' :
+                        driver.pole[index] === 1 ? 'underline' :
                         ''
                     };
                     text-decoration-color: rgb(255, 0, 255);
