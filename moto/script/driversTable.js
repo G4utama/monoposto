@@ -36,7 +36,7 @@ const createDriversTable = async () => {
                         driver.points[index] === 25 ? driver.borderColor : 
                         driver.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                         driver.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
-                        driver.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
+                        driver.points[index] === "DNS" ? 'rgba(255, 255, 255, 0.25)' : 
                         driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :
                         gpData.name.endsWith('*') && driver.points[index] === 12 ? driver.borderColor : 
                         ''
