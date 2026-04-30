@@ -2,21 +2,21 @@
 <html>
 <head>
     <title>Monoposto - Teams</title>
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/mobile.css" media="screen and (max-width: 1080px)">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
-    <script src="script/dataLoader.js"></script>
-    <script src="script/teamsCard.js"></script>
-    <script src="script/teamsTable.js"></script>
-    <script src="script/teamsChart.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <!-- <script src="../script/teamsCard.js"></script> -->
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
 </head>
 <body>
-    <h1><a href="index.html">Monoposto - Teams</a></h1>
+    <h1><a href="../index.html">Monoposto - Teams</a></h1>
     <hr>
-    <div class="teams"></div>
+    <!-- <div class="teams"></div> -->
     <h2>Points</h2>
     <div id="teamsTable"></div>
     <div class="legend">
@@ -35,5 +35,10 @@
     <canvas id="teamsChartTop"></canvas>
     <h2>Bottom Teams</h2>
     <canvas id="teamsChartBottom"></canvas>
+    <script>
+        createTeamsChart(['MCL','MER', 'RED', 'FER', 'WIL', 'RAC', 'AST', 'HAA', 'AUD', 'ALP', 'CAD'], 'teamsChart');
+        createTeamsChart(['MCL','MER', 'RED', 'FER'], 'teamsChartTop');
+        createTeamsChart(['WIL', 'RAC', 'AST', 'HAA', 'AUD', 'ALP', 'CAD'], 'teamsChartBottom');
+    </script>
 </body>
 </html>

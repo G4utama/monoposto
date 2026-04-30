@@ -12,7 +12,7 @@ const createTeamsTable = async () => {
                 <th>T</th>
                 ${gp.map(gpData => ` 
                     <th class="flag">
-                        <img style="${gpData.name_short.endsWith('*') ? 'width: 50%;' : ''}" src="assets/flag/${gpData.name.replace('*', '')}.png">
+                        <img style="${gpData.name_short.endsWith('*') ? 'width: 50%;' : ''}" src="../assets/flag/${gpData.name.replace('*', '')}.png">
                         ${gpData.name_short}
                     </th>
                 `).join('')}
@@ -25,18 +25,22 @@ const createTeamsTable = async () => {
                 <td style="color: ${team.borderColor};">${team.name}</td>
                 ${gp.map((gpData, index) => `<td style="
                     color: ${
-                        team.points[index] === 43 ? team.borderColor : 
+                        team.firstSecond[index] === 1 ? team.borderColor : 
                         team.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                         team.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
-                        team.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
+                        team.points[index] === "DNS" ? 'rgba(255, 255, 255, 0.25)' : 
                         team.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' : 
-                        gpData.name.endsWith('*') && team.points[index] === 15 ? team.borderColor :
+                        gpData.name.endsWith('*') && team.firstSecond[index] === 1 ? team.borderColor :
                         ''
                     };
                     background-color: ${
                         gpData.name.endsWith('*') && team.points[index].toString().endsWith('.podium') ? `rgba(${team.borderColor.slice(4, -1)}, 0.15)` :
                         team.podium[index] === 1 ? `rgba(${team.borderColor.slice(4, -1)}, 0.25)` :
                         gpData.name.endsWith('*') ? `rgba(255, 255, 255, 0.05)`:
+                        ''
+                    };
+                    font-weight: ${
+                        team.firstSecond[index] === 1 ? 'bold' :
                         ''
                     };
                 ">${team.points[index]}</td>`).join('')}

@@ -1,4 +1,4 @@
-fetch('data/drivers.json')
+fetch('monoposto/data/drivers.json')
 .then(response => response.json())
 .then(data => {
 	// Sort the drivers based on their points_sum values in descending order

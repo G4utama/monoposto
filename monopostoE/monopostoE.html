@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MonopostoE</title>
+    <title>Monoposto E</title>
     <link rel="icon" type="image/png" href="../assets/logo.png">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
@@ -9,13 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="../script/dataLoader.js"></script>
-    <script src="script/driversTable.js"></script>
-    <script src="script/driversChart.js"></script>
-    <script src="script/teamsTable.js"></script>
-    <script src="script/teamsChart.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
 </head>
 <body>
-    <h1><a href="../index.html">MonopostoE</a></h1>
+    <h1><a href="../index.html">Monoposto E</a></h1>
     <hr>
     <div class="drivers"></div>
     <h2>Drivers - Points</h2>
@@ -30,5 +30,9 @@
     <hr>
     <h2>Teams - Graphs</h2>
     <canvas id="teamsChart"></canvas>
+    <script>
+        createDriversChart(['WEH', 'MUE', 'EVA', 'DAC', 'ROW', 'NAT', 'MOR', 'DEV', 'BAR', 'GUE', 'DEN', 'DRU', 'BUE', 'ERI', 'CAS', 'JEV', 'TIC', 'MAR', 'MAL', 'DIG'], 'driversChart');
+        createTeamsChart(['POR', 'JAG', 'NIS', 'MAH', 'DS', 'AND', 'ENV', 'CIT', 'CUP', 'LOL'], 'teamsChart');
+    </script>
 </body>
 </html>

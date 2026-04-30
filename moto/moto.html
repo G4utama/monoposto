@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="../script/dataLoader.js"></script>
-    <script src="script/driversTable.js"></script>
-    <script src="script/driversChart.js"></script>
-    <script src="script/teamsTable.js"></script>
-    <script src="script/teamsChart.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
 </head>
 <body>
     <h1><a href="../index.html">Moto</a></h1>
@@ -30,5 +30,9 @@
     <hr>
     <h2>Teams - Graphs</h2>
     <canvas id="teamsChart"></canvas>
+    <script>
+        createDriversChart(['ZAR 5', 'RAZ 7', 'MAR 10', 'MOR 11', 'VIN 12', 'QUA 20', 'MOR 21', 'BAS 23', 'FER 25', 'SAV 32', 'BIN 33', 'MIR 36', 'ACO 37', 'RIN 42', 'MIL 43', 'FER 47', 'DIG 49', 'PIR 51', 'ALD 54', 'BAG 63', 'BEZ 72', 'MAR 73', 'OGU 79', 'MAR 89', 'MAR 93'], 'driversChart');
+        createTeamsChart(['DUC', 'GRE', 'VR46', 'KTM', 'APR', 'YAM', 'TRA', 'HON', 'KTM2', 'LCR', 'PRI'], 'teamsChart');
+    </script>
 </body>
 </html>

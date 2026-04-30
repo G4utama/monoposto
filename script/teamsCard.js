@@ -1,4 +1,4 @@
-fetch('data/teams.json')
+fetch('monoposto/data/teams.json')
 .then(response => response.json())
 .then(data => {
     // Sort the teams based on their points_sum values in descending order

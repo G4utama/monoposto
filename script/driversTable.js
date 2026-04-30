@@ -20,7 +20,7 @@ const createDriversTable = async () => {
                 <th>D</th>
                 ${gp.map(gpData => ` 
                     <th class="flag">
-                        <img style="${gpData.name_short.endsWith('*') ? 'width: 50%;' : ''}" src="assets/flag/${gpData.name.replace('*', '')}.png">
+                        <img style="${gpData.name_short.endsWith('*') ? 'width: 50%;' : ''}" src="../assets/flag/${gpData.name.replace('*', '')}.png">
                         ${gpData.name_short}
                     </th>
                 `).join('')}
@@ -33,27 +33,25 @@ const createDriversTable = async () => {
                 <td style="color: ${driver.borderColor};">${driver.name}</td>
                 ${gp.map((gpData, index) => `<td style=" 
                     color: ${
-                        driver.points[index] === 25 ? driver.borderColor : 
+                        gpData.name.endsWith('*') && driver.win[index] === 1 ? driver.borderColor : 
+                        driver.win[index] === 1 ? driver.borderColor : 
                         driver.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                         driver.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
-                        driver.points[index] === "DNS" ? 'rgba(255, 0, 0, 0.5)' : 
-                        driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :
-                        gpData.name.endsWith('*') && driver.points[index] === 8 ? driver.borderColor : 
-                        gpData.name.endsWith('*') && driver.points[index] === "8.5" ? driver.borderColor :
-                        ''
+                        driver.points[index] === "DNS" ? 'rgba(255, 255, 255, 0.25)' : 
+                        driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :                        ''
                     }; 
                     background-color: ${
-                        driver.points[index] === 25 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                        driver.points[index] === 18 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                        driver.points[index] === 15 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
-                        gpData.name.endsWith('*') && driver.points[index] === 8 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
-                        gpData.name.endsWith('*') && driver.points[index] === 7 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
-                        gpData.name.endsWith('*') && driver.points[index] === 6 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)`:
+                        gpData.name.endsWith('*') && driver.podium[index] === 1 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
+                        driver.podium[index] === 1 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.25)` :
                         gpData.name.endsWith('*') ? `rgba(255, 255, 255, 0.05)`:
                         ''
                     }; 
                     text-decoration: ${
-                        driver.pole[index] === 1 ? 'underline' :
+                        driver.pole[index] === 1 ? 'underline wavy' :
+                        ''
+                    };
+                    font-weight: ${
+                        driver.win[index] === 1 ? 'bold' :
                         ''
                     };
                     text-decoration-color: rgb(255, 0, 255);

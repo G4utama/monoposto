@@ -67,7 +67,3 @@ const createTeamsChart = async (teamNames, elementId) => {
         }
     });
 };
-
-createTeamsChart(['MCL','MER', 'RED', 'FER', 'WIL', 'RAC', 'AST', 'HAA', 'AUD', 'ALP', 'CAD'], 'teamsChart');
-createTeamsChart(['MCL','MER', 'RED', 'FER'], 'teamsChartTop');
-createTeamsChart(['WIL', 'RAC', 'AST', 'HAA', 'AUD', 'ALP', 'CAD'], 'teamsChartBottom');
