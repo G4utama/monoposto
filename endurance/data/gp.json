@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Italy",
+        "name_short": "ITA"
+    },
+    {
+        "name": "Belgium",
+        "name_short": "BEL"
+    },
+    {
+        "name": "France",
+        "name_short": "FRA"
+    },
+    {
+        "name": "Brazil",
+        "name_short": "BRA"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA"
+    },
+    {
+        "name": "Japan",
+        "name_short": "JPN"
+    },
+    {
+        "name": "Qatar",
+        "name_short": "QAT"
+    },
+    {
+        "name": "Bahrain",
+        "name_short": "BAH"
+    }
+]

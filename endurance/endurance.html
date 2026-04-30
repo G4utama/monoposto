@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Endurance</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html">Endurance</a></h1>
+    <hr>
+    <div class="drivers"></div>
+    <h2>Drivers - Points</h2>
+    <div id="driversTable"></div>
+    <hr>
+    <h2>Drivers - Graphs</h2>
+    <canvas id="driversChart"></canvas>
+    <hr>
+    <div class="teams"></div>
+    <h2>Teams - Points</h2>
+    <div id="teamsTable"></div>
+    <hr>
+    <h2>Teams - Graphs</h2>
+    <canvas id="teamsChart"></canvas>
+    <script>
+        createDriversChart(['AST 007', 'AST 009', 'TOY 7', 'TOY 8', 'CAD 12', 'BMW 15', 'GEN 17', 'GEN 19', 'BMW 20', 'ALP 35', 'ALP 36', 'CAD 38', 'FER 50', 'FER 51', 'FER 83', 'PEU 93', 'PEU 94'], 'driversChart');
+        createTeamsChart(['ALP', 'AST', 'BMW', 'CAD', 'FER', 'GEN', 'PEU', 'TOY'], 'teamsChart');
+    </script>
+</body>
+</html>

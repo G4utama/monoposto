@@ -1,0 +1,66 @@
+[
+    {
+        "name": "ALP",
+        "points": [13, "", "", "", "", "", "", ""],
+        "points_sum": [13],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 147, 204)"
+    },
+    {
+        "name": "AST",
+        "points": [2, "", "", "", "", "", "", ""],
+        "points_sum": [2],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(34, 153, 113)"
+    },
+    {
+        "name": "BMW",
+        "points": [16, "", "", "", "", "", "", ""],
+        "points_sum": [16],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(91, 180, 229)"
+    },
+    {
+        "name": "CAD",
+        "points": [4, "", "", "", "", "", "", ""],
+        "points_sum": [4],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(45, 52, 96)"
+    },
+    {
+        "name": "FER",
+        "points": [27, "", "", "", "", "", "", ""],
+        "points_sum": [27],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [1, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(232, 0, 32)"
+    },
+    {
+        "name": "GEN",
+        "points": [0, "", "", "", "", "", "", ""],
+        "points_sum": [0],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(160, 176, 176)"
+    },
+    {
+        "name": "PEU",
+        "points": [0, "", "", "", "", "", "", ""],
+        "points_sum": [0],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)"
+    },
+    {
+        "name": "TOY",
+        "points": [40, "", "", "", "", "", "", ""],
+        "points_sum": [40],
+        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [1, 0, 0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(192, 32, 32)"
+    }
+]
