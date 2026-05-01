@@ -3,15 +3,7 @@ const createDriversTable = async () => {
     const gp = await loadJsonData('data/gp.json');
     if (!drivers || !gp) return;
 
-    drivers.sort((a, b) => {
-        const aLastPointSum = a.points_sum[a.points_sum.length - 1];
-        const bLastPointSum = b.points_sum[b.points_sum.length - 1];
-        if (aLastPointSum !== bLastPointSum) {
-            return bLastPointSum - aLastPointSum;
-        } else {
-            return b.sort - a.sort;
-        }
-    });
+    drivers.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
 
     const tableHtml = `
         <table>
@@ -30,7 +22,7 @@ const createDriversTable = async () => {
             <tr>
                 ${drivers.map((driver, index) => ` 
                 <td>${index + 1}</td>
-                <td style="color: ${driver.borderColor};">${driver.name}</td>
+                <td style="color: ${driver.borderColor};">${driver.name} <img style="width: 16px;" src="../assets/flag/${driver.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style=" 
                     color: ${
                         gpData.name.endsWith('*') && driver.win[index] === 1 ? driver.borderColor : 

@@ -1,6 +1,7 @@
 [
     {
         "name": "AST 007",
+        "flag": "United_Kingdom",
         "points": [2, "", "", "", "", "", "", ""],
         "points_sum": [2],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -12,6 +13,7 @@
     },
     {
         "name": "AST 009",
+        "flag": "United_Kingdom",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -23,6 +25,7 @@
     },
     {
         "name": "TOY 7",
+        "flag": "Japan",
         "points": [15, "", "", "", "", "", "", ""],
         "points_sum": [15],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -34,6 +37,7 @@
     },
     {
         "name": "TOY 8",
+        "flag": "Japan",
         "points": [25, "", "", "", "", "", "", ""],
         "points_sum": [25],
         "win": [1, 0, 0, 0, 0, 0, 0, 0],
@@ -45,6 +49,7 @@
     },
     {
         "name": "CAD 12",
+        "flag": "United_States_of_America",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -56,6 +61,7 @@
     },
     {
         "name": "BMW 15",
+        "flag": "Germany",
         "points": [6, "", "", "", "", "", "", ""],
         "points_sum": [6],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -67,6 +73,7 @@
     },
     {
         "name": "GEN 17",
+        "flag": "South_Korea",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -78,6 +85,7 @@
     },
     {
         "name": "GEN 19",
+        "flag": "South_Korea",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -89,6 +97,7 @@
     },
     {
         "name": "BMW 20",
+        "flag": "Germany",
         "points": [10, "", "", "", "", "", "", ""],
         "points_sum": [10],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -100,6 +109,7 @@
     },
     {
         "name": "ALP 35",
+        "flag": "France",
         "points": [12, "", "", "", "", "", "", ""],
         "points_sum": [12],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -111,6 +121,7 @@
     },
     {
         "name": "ALP 36",
+        "flag": "France",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -122,6 +133,7 @@
     },
     {
         "name": "CAD 38",
+        "flag": "United_States_of_America",
         "points": [4, "", "", "", "", "", "", ""],
         "points_sum": [4],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -133,6 +145,7 @@
     },
     {
         "name": "FER 50",
+        "flag": "Italy",
         "points": [8, "", "", "", "", "", "", ""],
         "points_sum": [8],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -144,6 +157,7 @@
     },
     {
         "name": "FER 51",
+        "flag": "Italy",
         "points": [19, "", "", "", "", "", "", ""],
         "points_sum": [19],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -155,17 +169,19 @@
     },
     {
         "name": "FER 83",
+        "flag": "Italy",
         "points": [1, "", "", "", "", "", "", ""],
         "points_sum": [1],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [0, 0, 0, 0, 0, 0, 0, 0],
         "pole": [0, 0, 0, 0, 0, 0, 0, 0],
-        "borderColor": "rgb(232, 0, 32)",
+        "borderColor": "rgb(254, 224, 32)",
         "borderDash": [],
         "sort": 0
     },
     {
         "name": "PEU 93",
+        "flag": "France",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -177,6 +193,7 @@
     },
     {
         "name": "PEU 94",
+        "flag": "France",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "win": [0, 0, 0, 0, 0, 0, 0, 0],

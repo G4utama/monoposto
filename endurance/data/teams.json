@@ -1,6 +1,7 @@
 [
     {
         "name": "ALP",
+        "flag": "France",
         "points": [13, "", "", "", "", "", "", ""],
         "points_sum": [13],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -9,6 +10,7 @@
     },
     {
         "name": "AST",
+        "flag": "United_Kingdom",
         "points": [2, "", "", "", "", "", "", ""],
         "points_sum": [2],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -17,6 +19,7 @@
     },
     {
         "name": "BMW",
+        "flag": "Germany",
         "points": [16, "", "", "", "", "", "", ""],
         "points_sum": [16],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -25,6 +28,7 @@
     },
     {
         "name": "CAD",
+        "flag": "United_States_of_America",
         "points": [4, "", "", "", "", "", "", ""],
         "points_sum": [4],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -33,6 +37,7 @@
     },
     {
         "name": "FER",
+        "flag": "Italy",
         "points": [27, "", "", "", "", "", "", ""],
         "points_sum": [27],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -41,6 +46,7 @@
     },
     {
         "name": "GEN",
+        "flag": "South_Korea",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -49,6 +55,7 @@
     },
     {
         "name": "PEU",
+        "flag": "France",
         "points": [0, "", "", "", "", "", "", ""],
         "points_sum": [0],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
@@ -57,6 +64,7 @@
     },
     {
         "name": "TOY",
+        "flag": "Japan",
         "points": [40, "", "", "", "", "", "", ""],
         "points_sum": [40],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],

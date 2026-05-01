@@ -22,7 +22,7 @@ const createTeamsTable = async () => {
             <tr>
                 ${teams.map((team, index) => `
                 <td>${index + 1}</td>
-                <td style="color: ${team.borderColor};">${team.name}</td>
+                <td style="color: ${team.borderColor};">${team.name} <img style="width: 16px;" src="../assets/flag/${team.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style="
                     color: ${
                         team.firstSecond[index] === 1 ? team.borderColor : 
