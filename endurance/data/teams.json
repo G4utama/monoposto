@@ -2,8 +2,8 @@
     {
         "name": "ALP",
         "flag": "France",
-        "points": [13, "", "", "", "", "", "", ""],
-        "points_sum": [13],
+        "points": [13, 1, "", "", "", "", "", ""],
+        "points_sum": [13, 14],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [0, 0, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(0, 147, 204)"
@@ -11,8 +11,8 @@
     {
         "name": "AST",
         "flag": "United_Kingdom",
-        "points": [2, "", "", "", "", "", "", ""],
-        "points_sum": [2],
+        "points": [2, 12, "", "", "", "", "", ""],
+        "points_sum": [2, 14],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [0, 0, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(34, 153, 113)"
@@ -20,17 +20,17 @@
     {
         "name": "BMW",
         "flag": "Germany",
-        "points": [16, "", "", "", "", "", "", ""],
-        "points_sum": [16],
-        "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
-        "podium": [0, 0, 0, 0, 0, 0, 0, 0],
+        "points": [16, 43, "", "", "", "", "", ""],
+        "points_sum": [16, 59],
+        "firstSecond": [0, 1, 0, 0, 0, 0, 0, 0],
+        "podium": [0, 1, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(91, 180, 229)"
     },
     {
         "name": "CAD",
         "flag": "United_States_of_America",
-        "points": [4, "", "", "", "", "", "", ""],
-        "points_sum": [4],
+        "points": [4, 4, "", "", "", "", "", ""],
+        "points_sum": [4, 8],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [0, 0, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(45, 52, 96)"
@@ -38,17 +38,17 @@
     {
         "name": "FER",
         "flag": "Italy",
-        "points": [27, "", "", "", "", "", "", ""],
-        "points_sum": [27],
+        "points": [27, 15, "", "", "", "", "", ""],
+        "points_sum": [27, 42],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
-        "podium": [1, 0, 0, 0, 0, 0, 0, 0],
+        "podium": [1, 1, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(232, 0, 32)"
     },
     {
         "name": "GEN",
         "flag": "South_Korea",
-        "points": [0, "", "", "", "", "", "", ""],
-        "points_sum": [0],
+        "points": [0, 6, "", "", "", "", "", ""],
+        "points_sum": [0, 6],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [0, 0, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(160, 176, 176)"
@@ -56,8 +56,8 @@
     {
         "name": "PEU",
         "flag": "France",
-        "points": [0, "", "", "", "", "", "", ""],
-        "points_sum": [0],
+        "points": [0, 9, "", "", "", "", "", ""],
+        "points_sum": [0, 9],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [0, 0, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(255, 255, 255)"
@@ -65,8 +65,8 @@
     {
         "name": "TOY",
         "flag": "Japan",
-        "points": [40, "", "", "", "", "", "", ""],
-        "points_sum": [40],
+        "points": [40, 12, "", "", "", "", "", ""],
+        "points_sum": [40, 52],
         "firstSecond": [0, 0, 0, 0, 0, 0, 0, 0],
         "podium": [1, 0, 0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(192, 32, 32)"
