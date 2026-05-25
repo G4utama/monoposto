@@ -13,6 +13,8 @@
     <script src="../script/driversChart.js"></script>
     <script src="../script/teamsTable.js"></script>
     <script src="../script/teamsChart.js"></script>
+    <script src="../script/enginesTable.js"></script>
+    <script src="../script/enginesChart.js"></script>
 </head>
 <body>
     <h1><a href="../index.html">Monoposto E</a></h1>
@@ -30,9 +32,17 @@
     <hr>
     <h2>Teams - Graphs</h2>
     <canvas id="teamsChart"></canvas>
+    <hr>
+    <div class="engines"></div>
+    <h2>Engines - Points</h2>
+    <div id="enginesTable"></div>
+    <hr>
+    <h2>Engines - Graphs</h2>
+    <canvas id="enginesChart"></canvas>
     <script>
         createDriversChart(['ROW 1', 'MAR 3', 'GUN 7', 'EVA 9', 'DIG 11', 'DAC 13', 'ERI 14', 'BUE 16', 'DEV 21', 'MAL 22', 'NAT 23', 'VER 25', 'DEN 27', 'DRU 28', 'TIC 33', 'CAS 37', 'MOR 48', 'MUL 51', 'BAR 77', 'WEH 94'], 'driversChart');
         createTeamsChart(['AND', 'CIT', 'CUP', 'DS', 'ENV', 'JAG', 'LOL', 'MAH', 'NIS', 'POR'], 'teamsChart');
+        createEnginesChart(['CIT', 'DS', 'JAG', 'LOL', 'MAH', 'NIS', 'POR'], 'enginesChart');
     </script>
 </body>
 </html>

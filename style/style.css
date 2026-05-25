@@ -173,7 +173,7 @@ table tr:last-child{
     background-color: var(--lightGray);
 }
 
-.drivers img, .teams img{
+.drivers img, .teams img, .engines img{
     padding-bottom: 2px;
 }
 
@@ -181,28 +181,28 @@ table tr:last-child{
     margin-bottom: 0.5em;
 }
 
-.drivers p, .teams p{
+.drivers p, .teams p, .engines p{
     margin-top: 0.5em;
 }
 
-.drivers, .teams{
+.drivers, .teams, .engines{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.driver1 img, .team1 img{
+.driver1 img, .team1 img, .engine1 img{
     margin-top: 0px;
     border-bottom: 24px solid var(--lightGray);
 }
 
-.driver2 img, .team2 img{
+.driver2 img, .team2 img, .engine2 img{
     margin-top: 8px;
     border-bottom: 16px solid var(--lightGray);
 }
 
-.driver3 img, .team3 img{
+.driver3 img, .team3 img, .engine3 img{
     margin-top: 16px;
     border-bottom: 8px solid var(--lightGray);
 }

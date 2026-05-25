@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monoposto - Engines</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <script src="../script/enginesTable.js"></script>
+    <script src="../script/enginesChart.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html">Monoposto - Engines</a></h1>
+    <hr>
+    <h2>Points</h2>
+    <div id="enginesTable"></div>
+    <div class="legend">
+        <h2>Legend:</h2>
+        <p class="winner">Text colored: First and Second</p>
+        <p class="podium">Background colored: Podium</p>
+        <p class="sprint">Background colored: Sprint</p>
+        <p class="dnf">DNF: Did Not Finish</p>
+        <p class="dns">DNS: Did Not Start</p>
+        <p class="dsq">DSQ: Disqualified</p>
+    </div>
+    <hr>
+    <h2>Graphs</h2>
+    <canvas id="enginesChart"></canvas>
+    <script>
+        createEnginesChart(['AUD', 'FER', 'FOR', 'HON', 'MER'], 'enginesChart');
+    </script>
+</body>
+</html>
