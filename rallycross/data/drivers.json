@@ -1,0 +1,578 @@
+[
+    {
+        "name": "ODO 2",
+        "flag": "Ireland",
+        "points": [
+            0, 2, "", "", "", ""],
+        "points_sum": [
+            0, 2],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "BAU 6",
+        "flag": "Latvia",
+        "points": [
+            2, "DNS", "", "", "", ""],
+        "points_sum": [
+            2, 2],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "ODO 7",
+        "flag": "Ireland",
+        "points": [
+            19, 7, "", "", "", ""],
+        "points_sum": [
+            19, 26],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "KRI 8",
+        "flag": "Sweden",
+        "points": [
+            40, 24, "", "", "", ""],
+        "points_sum": [
+            40, 64],
+        "win": [
+            1, 0, 0, 0, 0, 0],
+        "podium": [
+            1, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 1, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "KON 9",
+        "flag": "Hungary",
+        "points": [
+            11, "DNS", "", "", "", ""],
+        "points_sum": [
+            11, 11],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "OLI 10",
+        "flag": "Portugal",
+        "points": [
+            3, 0, "", "", "", ""],
+        "points_sum": [
+            3, 3],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "TAM 11",
+        "flag": "Estonia",
+        "points": [
+            6, "DNS", "", "", "", ""],
+        "points_sum": [
+            6, 6],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "BEN 12",
+        "flag": "France",
+        "points": [
+            "DNS", 2, "", "", "", ""],
+        "points_sum": [
+            0, 2],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "BAK 13",
+        "flag": "Norway",
+        "points": [
+            25, 40, "", "", "", ""],
+        "points_sum": [
+            25, 65],
+        "win": [
+            0, 1, 0, 0, 0, 0],
+        "podium": [
+            0, 1, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "BAC 14",
+        "flag": "Lithuania",
+        "points": [
+            9, "DNS", "", "", "", ""],
+        "points_sum": [
+            9, 9],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "RYT 18",
+        "flag": "Finland",
+        "points": [
+            17, 31, "", "", "", ""],
+        "points_sum": [
+            17, 48],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 1, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "TUR 20",
+        "flag": "Finland",
+        "points": [
+            25, 28, "", "", "", ""],
+        "points_sum": [
+            25, 53],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            1, 1, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "LAR 22",
+        "flag": "Norway",
+        "points": [
+            0, "DNS", "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "TIK 23",
+        "flag": "Estonia",
+        "points": [
+            0, "DNS", "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "SEP 24",
+        "flag": "Finland",
+        "points": [
+            3, 3, "", "", "", ""],
+        "points_sum": [
+            3, 6],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 255, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "KIS 27",
+        "flag": "Hungary",
+        "points": [
+            "DNS", 2, "", "", "", ""],
+        "points_sum": [
+            0, 2],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "PAI 29",
+        "flag": "France",
+        "points": [
+            0, 11, "", "", "", ""],
+        "points_sum": [
+            0, 11],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "VOL 30",
+        "flag": "Germany",
+        "points": [
+            2, 3, "", "", "", ""],
+        "points_sum": [
+            2, 5],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "LIN 33",
+        "flag": "Denmark",
+        "points": [
+            8, 1, "", "", "", ""],
+        "points_sum": [
+            8, 9],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "JAN 36",
+        "flag": "Sweden",
+        "points": [
+            10, 16, "", "", "", ""],
+        "points_sum": [
+            10, 26],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "AUG 38",
+        "flag": "Germany",
+        "points": [
+            0, 1, "", "", "", ""],
+        "points_sum": [
+            0, 1],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "BEC 44",
+        "flag": "Slovakia",
+        "points": [
+            "DNS", 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "MOZ 50",
+        "flag": "Hungary",
+        "points": [
+            "DNS", 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "MOZ 51",
+        "flag": "Hungary",
+        "points": [
+            2, 3, "", "", "", ""],
+        "points_sum": [
+            2, 5],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "PLE 55",
+        "flag": "Lithuania",
+        "points": [
+            2, 6, "", "", "", ""],
+        "points_sum": [
+            2, 8],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 255, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "ENL 60",
+        "flag": "Sweden",
+        "points": [
+            0, 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "LIT 66",
+        "flag": "Poland",
+        "points": [
+            3, 10, "", "", "", ""],
+        "points_sum": [
+            3, 13],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "RAF 67",
+        "flag": "Norway",
+        "points": [
+            1, 8, "", "", "", ""],
+        "points_sum": [
+            1, 9],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "KAR 73",
+        "flag": "Hungary",
+        "points": [
+            0, 3, "", "", "", ""],
+        "points_sum": [
+            0, 3],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "MUE 77",
+        "flag": "Germany",
+        "points": [
+            0, 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "TRE 88",
+        "flag": "Hungary",
+        "points": [
+            8, 9, "", "", "", ""],
+        "points_sum": [
+            8, 17],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "VEI 96",
+        "flag": "Norway",
+        "points": [
+            33, 21, "", "", "", ""],
+        "points_sum": [
+            33, 54],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            1, 0, 0, 0, 0, 0],
+        "pole": [
+            1, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "RIB 99",
+        "flag": "Portugal",
+        "points": [
+            "DNS", 2, "", "", "", ""],
+        "points_sum": [
+            0, 2],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "FUC 111",
+        "flag": "Czechia",
+        "points": [
+            3, 0, "", "", "", ""],
+        "points_sum": [
+            3, 3],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "BEC 133",
+        "flag": "Slovakia",
+        "points": [
+            "DNS", 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "BEC 155",
+        "flag": "Slovakia",
+        "points": [
+            "DNS", 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    }
+]

@@ -1,0 +1,119 @@
+[
+    {
+        "name": "AUD",
+        "flag": "Germany",
+        "points": [
+            16, 16, "", "", "", ""],
+        "points_sum": [
+            16, 32],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)"
+    },
+    {
+        "name": "CIT",
+        "flag": "France",
+        "points": [
+            "DNS", 0, "", "", "", ""],
+        "points_sum": [
+            0, 0],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)"
+    },
+    {
+        "name": "FOR",
+        "flag": "United_States_of_America",
+        "points": [
+            57, 76, "", "", "", ""],
+        "points_sum": [
+            57, 133],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            1, 1, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)"
+    },
+    {
+        "name": "HYU",
+        "flag": "South_Korea",
+        "points": [
+            26, 33, "", "", "", ""],
+        "points_sum": [
+            26, 59],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 1, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 255)"
+    },
+    {
+        "name": "PEU",
+        "flag": "France",
+        "points": [
+            34, 32, "", "", "", ""],
+        "points_sum": [
+            34, 66],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)"
+    },
+    {
+        "name": "REN",
+        "flag": "France",
+        "points": [
+            10, 20, "", "", "", ""],
+        "points_sum": [
+            10, 30],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)"
+    },
+    {
+        "name": "SEA",
+        "flag": "Spain",
+        "points": [
+            0, 1, "", "", "", ""],
+        "points_sum": [
+            0, 1],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 0)"
+    },
+    {
+        "name": "SKO",
+        "flag": "Czechia",
+        "points": [
+            5, 9, "", "", "", ""],
+        "points_sum": [
+            5, 14],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 255, 0)"
+    },
+    {
+        "name": "VOL",
+        "flag": "Germany",
+        "points": [
+            84, 46, "", "", "", ""],
+        "points_sum": [
+            84, 130],
+        "podiumSweep": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            1, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)"
+    }
+]

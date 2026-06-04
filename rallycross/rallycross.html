@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rallycross</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/enginesTable.js"></script>
+    <script src="../script/enginesChart.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html">Rallycross</a></h1>
+    <hr>
+    <div class="drivers"></div>
+    <h2>Drivers - Points</h2>
+    <div id="driversTable"></div>
+    <hr>
+    <h2>Drivers - Graphs</h2>
+    <canvas id="driversChart"></canvas>
+    <hr>
+    <div class="engines"></div>
+    <h2>Engines - Points</h2>
+    <div id="enginesTable"></div>
+    <hr>
+    <h2>Engines - Graphs</h2>
+    <canvas id="enginesChart"></canvas>
+    <script>
+        createDriversChart(['ODO 2', 'BAU 6', 'ODO 7', 'KRI 8', 'KON 9', 'OLI 10', 'TAM 11', 'BEN 12', 'BAK 13', 'BAC 14', 'RYT 18', 'TUR 20', 'LAR 22', 'TIK 23', 'SEP 24', 'KIS 27', 'PAI 29', 'VOL 30', 'LIN 33', 'JAN 36', 'AUG 38', 'BEC 44', 'MOZ 50', 'MOZ 51', 'PLE 55', 'ENL 60', 'LIT 66', 'RAF 67', 'KAR 73', 'MUE 77', 'TRE 88', 'VEI 96', 'RIB 99', 'FUC 111', 'BEC 133', 'BEC 155'], 'driversChart');
+        createEnginesChart(['AUD', 'CIT', 'FOR', 'HYU', 'PEU', 'REN', 'SEA', 'SKO', 'VOL'], 'enginesChart');
+    </script>
+</body>
+</html>
