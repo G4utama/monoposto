@@ -12,8 +12,9 @@ const createEnginesTable = async () => {
                 <th>T</th>
                 ${gp.map(gpData => ` 
                     <th class="flag">
-                        <img style="${gpData.name_short.endsWith('*') ? 'width: 50%;' : ''}" src="../assets/flag/${gpData.name.replace('*', '')}.png">
                         ${gpData.name_short}
+                        <img style="${gpData.name_short.endsWith('*') ? 'width: 50%;' : ''}" src="../assets/flag/${gpData.name.replace('*', '')}.png">
+                        <small>${gpData.date}</small>
                     </th>
                 `).join('')}
                 <th>Tot</th>

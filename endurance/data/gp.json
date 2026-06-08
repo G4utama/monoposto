@@ -1,34 +1,42 @@
 [
     {
         "name": "Italy",
-        "name_short": "ITA"
+        "name_short": "ITA",
+        "date": "19/04"
     },
     {
         "name": "Belgium",
-        "name_short": "BEL"
+        "name_short": "BEL",
+        "date": "09/05"
     },
     {
         "name": "France",
-        "name_short": "FRA"
+        "name_short": "FRA",
+        "date": "14/06"
     },
     {
         "name": "Brazil",
-        "name_short": "BRA"
+        "name_short": "BRA",
+        "date": "12/07"
     },
     {
         "name": "United_States_of_America",
-        "name_short": "USA"
+        "name_short": "USA",
+        "date": "06/09"
     },
     {
         "name": "Japan",
-        "name_short": "JPN"
+        "name_short": "JPN",
+        "date": "27/09"
     },
     {
         "name": "Qatar",
-        "name_short": "QAT"
+        "name_short": "QAT",
+        "date": "24/10"
     },
     {
         "name": "Bahrain",
-        "name_short": "BAH"
+        "name_short": "BAH",
+        "date": "07/11"
     }
 ]
