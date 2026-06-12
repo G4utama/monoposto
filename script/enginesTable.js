@@ -22,7 +22,7 @@ const createEnginesTable = async () => {
             </tr>
             ${engines.map((engine, index) => `
                 <td>${index + 1}</td>
-                <td style="color: ${engine.borderColor};">${engine.name} <img style="width: 16px;" src="../assets/flag/${engine.flag}.png"></td>
+                <td style="color: ${engine.borderColor};">${engine.name}<sub>${engine.teams.length}</sub> <img style="width: 16px;" src="../assets/flag/${engine.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style="
                     color: ${
                         engine.podiumSweep[index] === 1 ? engine.borderColor : 
@@ -43,8 +43,15 @@ const createEnginesTable = async () => {
                         engine.podiumSweep[index] === 1 ? 'bold' :
                         ''
                     };
-                ">${engine.points[index]}</td>`).join('')}
-                <td style="color: ${engine.borderColor};">${engine.points_sum[engine.points_sum.length - 1]}</td>
+                ">${engine.points[index]}<sub>${
+                    engine.points[index] === 0 ? '' :
+                    engine.points[index] === "DNF" ? '' :
+                    engine.points[index] === "DNS" ? '' :
+                    engine.points[index] === "DSQ" ? '' :
+                    engine.points[index] === '' ? '' :
+                    (engine.points[index]/engine.teams.length).toFixed()
+                }</sub></td>`).join('')}
+                <td style="color: ${engine.borderColor};">${engine.points_sum[engine.points_sum.length - 1]}<sub>${(engine.points_sum[engine.points_sum.length - 1]/engine.teams.length).toFixed()}</sub></td>
                 <td style="color: ${engine.borderColor};">
                     ${index > 0
                         ? (engines[index - 1].points_sum[engines[index - 1].points_sum.length - 1] - (engine.points_sum[engine.points_sum.length - 1] || 0)) !== 0

@@ -1,6 +1,7 @@
 [
     {
         "name": "AUD",
+        "teams": ["", "", "", ""],
         "flag": "Germany",
         "points": [
             16, 16, "", "", "", ""],
@@ -14,6 +15,7 @@
     },
     {
         "name": "CIT",
+        "teams": ["", "", ""],
         "flag": "France",
         "points": [
             "DNS", 0, "", "", "", ""],
@@ -27,6 +29,7 @@
     },
     {
         "name": "FOR",
+        "teams": ["", "", "", "", "", ""],
         "flag": "United_States_of_America",
         "points": [
             57, 76, "", "", "", ""],
@@ -40,6 +43,7 @@
     },
     {
         "name": "HYU",
+        "teams": ["", "", ""],
         "flag": "South_Korea",
         "points": [
             26, 33, "", "", "", ""],
@@ -53,6 +57,7 @@
     },
     {
         "name": "PEU",
+        "teams": ["", "", "", "", "", "", "", "", ""],
         "flag": "France",
         "points": [
             34, 32, "", "", "", ""],
@@ -66,6 +71,7 @@
     },
     {
         "name": "REN",
+        "teams": ["", ""],
         "flag": "France",
         "points": [
             10, 20, "", "", "", ""],
@@ -79,6 +85,7 @@
     },
     {
         "name": "SEA",
+        "teams": ["", ""],
         "flag": "Spain",
         "points": [
             0, 1, "", "", "", ""],
@@ -92,6 +99,7 @@
     },
     {
         "name": "SKO",
+        "teams": ["", ""],
         "flag": "Czechia",
         "points": [
             5, 9, "", "", "", ""],
@@ -105,6 +113,7 @@
     },
     {
         "name": "VOL",
+        "teams": ["", "", "", "", ""],
         "flag": "Germany",
         "points": [
             84, 46, "", "", "", ""],
