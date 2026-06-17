@@ -9,7 +9,7 @@ const createEnginesTable = async () => {
         <table>
             <tr>
                 <th>Pos</th>
-                <th>T</th>
+                <th>E</th>
                 ${gp.map(gpData => ` 
                     <th class="flag">
                         ${gpData.name_short}
@@ -66,6 +66,8 @@ const createEnginesTable = async () => {
     `;
 
     document.getElementById('enginesTable').innerHTML = tableHtml;
+
+    document.getElementById('enginesTable').style.maxWidth = `${(gp.length + 4) * 64}px`;
 };
 
 createEnginesTable();

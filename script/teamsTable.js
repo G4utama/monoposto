@@ -60,6 +60,8 @@ const createTeamsTable = async () => {
     `;
 
     document.getElementById('teamsTable').innerHTML = tableHtml;
+
+    document.getElementById('teamsTable').style.maxWidth = `${(gp.length + 4) * 64}px`;
 };
 
 createTeamsTable();

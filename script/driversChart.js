@@ -8,7 +8,8 @@ const createDriversChartData = async (driverNames, gp) => {
             data: driver.points_sum,
             borderColor: driver.borderColor,
             borderWidth: 2,
-            borderDash: driver.borderDash
+            borderDash: driver.borderDash,
+            lineTension: 0
         }))
     };
     return chartData;

@@ -45,10 +45,6 @@ h2{
     margin-top: 1em;
 }
 
-/* p{
-    text-align: left;
-} */
-
 a, a:hover{
     text-decoration: none;
     color: var(--lightGray);
@@ -64,9 +60,18 @@ table, canvas{
     /* justify-content: center; */
 }
 
-canvas {
+canvas{
     max-width: 1920px;
 }
+
+#driversPosition, #teamsPosition, #driversTable, #teamsTable, #enginesTable{
+    margin: auto;
+}
+
+/* #driversPosition div, #teamsPosition div{
+    min-height: 100px;
+    max-height: 100px;
+} */
 
 table{
     max-width: 1920px;
@@ -143,6 +148,12 @@ table tr:last-child{
 .flag img{
     width: 32px;
     border: 1px solid var(--darkGray);
+}
+
+#driversPosition, #teamsPosition{
+    display: flex;
+    overflow-x: auto;
+    /* justify-content: center; */
 }
 
 /* Cards */

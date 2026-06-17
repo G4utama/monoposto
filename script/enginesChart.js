@@ -8,7 +8,8 @@ const createEnginesChartData = async (engineNames, gp) => {
             data: engine.points_sum,
             borderColor: engine.borderColor,
             borderWidth: 2,
-            borderDash: engine.borderDash
+            borderDash: engine.borderDash,
+            lineTension: 0
         }))
     };
     return chartData;

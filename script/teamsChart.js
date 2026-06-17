@@ -8,7 +8,8 @@ const createTeamsChartData = async (teamNames, gp) => {
             data: team.points_sum,
             borderColor: team.borderColor,
             borderWidth: 2,
-            borderDash: team.borderDash
+            borderDash: team.borderDash,
+            lineTension: 0
         }))
     };
     return chartData;

@@ -1,6 +1,7 @@
 [
     {
         "name": "NOR 1",
+        "team": "MCL",
         "flag": "United_Kingdom",
         "points": [
             10, 5, "DNS", 10, 8, 18, 7, "DNF", "DNF", 15, 
@@ -25,6 +26,7 @@
     },
     {
         "name": "VER 3",
+        "team": "RED",
         "flag": "Netherlands",
         "points": [
             8, 0, "DNF", 4, 4, 10, 2, 15, "DNF", 12, 
@@ -49,6 +51,7 @@
     },
     {
         "name": "BOR 5",
+        "team": "AUD",
         "flag": "Brazil",
         "points": [
             2, 0, "DNS", 0, 0, 0, 0, 0, 0, 0, 
@@ -73,6 +76,7 @@
     },
     {
         "name": "HAD 6",
+        "team": "RED",
         "flag": "France",
         "points": [
             "DNF", 0, 4, 0, 0, "DNF", 0, 10, 12, 8, 
@@ -97,6 +101,7 @@
     },
     {
         "name": "GAS 10",
+        "team": "ALP",
         "flag": "France",
         "points": [
             1, 0, 8, 6, 1, "DNF", 0, 4, 15, 6, 
@@ -121,6 +126,7 @@
     },
     {
         "name": "PER 11",
+        "team": "CAD",
         "flag": "Mexico",
         "points": [
             0, 0, 0, 0, 0, 0, 0, "DNF", 0, 0, 
@@ -145,6 +151,7 @@
     },
     { 
         "name": "ANT 12",
+        "team": "MER",
         "flag": "Italy",
         "points": [
             18, 4, 25, 25, 3, 25, 6, 25, 25, "DNF", 
@@ -169,6 +176,7 @@
     },
     {
         "name": "ALO 14",
+        "team": "AST",
         "flag": "Spain",
         "points": [
             "DNF", 0, "DNF", 0, 0, 0, "DNF", "DNF", 1, "DNF", 
@@ -193,6 +201,7 @@
     },
     {
         "name": "LEC 16",
+        "team": "FER",
         "flag": "Monaco",
         "points": [
             15, 7, 12, 15, 6, 4, 4, 12, "DNF", "DNF", 
@@ -217,6 +226,7 @@
     },
     {
         "name": "STR 18",
+        "team": "AST",
         "flag": "Canada",
         "points": [
             0, 0, "DNF", "DNF", 0, 0, 0, 0, "DNF", "DNF", 
@@ -241,6 +251,7 @@
     },
     {
         "name": "ALB 23",
+        "team": "WIL",
         "flag": "Thailand",
         "points": [
             0, 0, "DNS", 0, 0, 1, 0, "DNF", 4, 0, 
@@ -265,6 +276,7 @@
     },
     {
         "name": "HUL 27",
+        "team": "AUD",
         "flag": "Germany",
         "points": [
             "DNS", "DNF", 0, 0, "DNS", "DNF", 0, 0, 0, "DNF", 
@@ -289,6 +301,7 @@
     },
     {
         "name": "LAW 30",
+        "team": "RAC",
         "flag": "Australia",
         "points": [
             0, 2, 6, 2, 0, "DNF", 0, 6, 8, 4, 
@@ -313,6 +326,7 @@
     },
     {
         "name": "OCO 31",
+        "team": "HAA",
         "flag": "France",
         "points": [
             0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 
@@ -337,6 +351,7 @@
     },
     {
         "name": "LIN 41",
+        "team": "RAC",
         "flag": "United_Kingdom",
         "points": [
             4, "DNF", 0, 0, "DNS", 0, 1, "DNF", 6, 2, 
@@ -361,6 +376,7 @@
     },
     {
         "name": "COL 43",
+        "team": "ALP",
         "flag": "Argentina",
         "points": [
             0, 0, 1, 0, 0, 6, 0, 8, 0, 1, 
@@ -385,6 +401,7 @@
     },
     {
         "name": "HAM 44",
+        "team": "FER",
         "flag": "United_Kingdom",
         "points": [
             12, 6, 15, 8, 2, 8, 3, 18, 18, 25, 
@@ -409,6 +426,7 @@
     },
     {
         "name": "SAI 55",
+        "team": "WIL",
         "flag": "Spain",
         "points": [
             0, 0, 2, 0, 0, 2, 0, 2, "DNF", 0, 
@@ -433,6 +451,7 @@
     },
     {
         "name": "RUS 63",
+        "team": "MER",
         "flag": "United_Kingdom",
         "points": [
             25, 8, 18, 12, 5, 12, 8, "DNF", 0, 18, 
@@ -457,6 +476,7 @@
     },
     {
         "name": "BOT 77",
+        "team": "CAD",
         "flag": "Finland",
         "points": [
             "DNF", "DNF", 0, 0, 0, 0, 0, 0, "DNF", "DNF", 
@@ -481,6 +501,7 @@
     },
     {
         "name": "PIA 81",
+        "team": "MCL",
         "flag": "Australia",
         "points": [
             "DNS", 3, "DNS", 18, 7, 15, 5, 0, 10, 10, 
@@ -505,6 +526,7 @@
     },
     {
         "name": "BEA 87",
+        "team": "HAA",
         "flag": "United_Kingdom",
         "points": [
             6, 1, 10, "DNF", 0, 0, 0, 1, "DNF", "DNF", 

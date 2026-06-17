@@ -64,6 +64,8 @@ const createDriversTable = async () => {
     `;
 
     document.getElementById('driversTable').innerHTML = tableHtml;
+
+    document.getElementById('driversTable').style.maxWidth = `${(gp.length + 4) * 64}px`;
 };
 
 createDriversTable();
