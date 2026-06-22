@@ -85,7 +85,7 @@ table{
 th, td{
     text-align: center;
     border-bottom: 1px solid var(--lightGray);
-    padding: 1em;
+    padding: 0.5em;
     min-width: 64px;
     max-width: 64px;
     box-sizing: border-box;

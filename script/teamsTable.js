@@ -30,7 +30,7 @@ const createTeamsTable = async () => {
                         team.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                         team.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                         team.points[index] === "DNS" ? 'rgba(255, 255, 255, 0.25)' : 
-                        team.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' : 
+                        team.points[index] === "DSQ" ? 'rgba(255, 255, 255, 0.25)' : 
                         gpData.name.endsWith('*') && team.firstSecond[index] === 1 ? team.borderColor :
                         ''
                     };

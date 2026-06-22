@@ -29,7 +29,7 @@ const createEnginesTable = async () => {
                         engine.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                         engine.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                         engine.points[index] === "DNS" ? 'rgba(255, 255, 255, 0.25)' : 
-                        engine.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :
+                        engine.points[index] === "DSQ" ? 'rgba(255, 255, 255, 0.25)' :
                         gpData.name.endsWith('*') && engine.podiumSweep[index] === 1 ? engine.borderColor :
                         ''
                     };

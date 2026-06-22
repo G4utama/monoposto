@@ -23,7 +23,7 @@ const createDriversTable = async () => {
             <tr>
                 ${drivers.map((driver, index) => ` 
                 <td>${index + 1}</td>
-                <td style="color: ${driver.borderColor};">${driver.name} <img style="width: 16px;" src="../assets/flag/${driver.flag}.png"></td>
+                <td style="color: ${driver.borderColor};">${driver.name.slice(0,3)}<sub>${driver.name.slice(4,7)}</sub> <img style="width: 16px;" src="../assets/flag/${driver.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style=" 
                     color: ${
                         gpData.name.endsWith('*') && driver.win[index] === 1 ? driver.borderColor : 
@@ -31,7 +31,7 @@ const createDriversTable = async () => {
                         driver.points[index] === 0 ? 'rgba(255, 255, 255, 0.25)' : 
                         driver.points[index] === "DNF" ? 'rgba(255, 0, 0, 0.5)' : 
                         driver.points[index] === "DNS" ? 'rgba(255, 255, 255, 0.25)' : 
-                        driver.points[index] === "DSQ" ? 'rgba(255, 0, 0, 0.5)' :                        ''
+                        driver.points[index] === "DSQ" ? 'rgba(255, 255, 255, 0.25)' :                        ''
                     }; 
                     background-color: ${
                         gpData.name.endsWith('*') && driver.podium[index] === 1 ? `rgba(${driver.borderColor.slice(4, -1)}, 0.15)` :
