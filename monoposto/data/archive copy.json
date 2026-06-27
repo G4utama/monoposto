@@ -1,0 +1,421 @@
+[
+    {
+        "number": "2025",
+        "era": "Ground Effect Era",
+        "drivers": ["NOR-MCL", "VER-RED", "PIA-MCL"],
+        "drivers-points": [423, 421, 410],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "RED", "MER"],
+        "teams-points": [833, 469, 451],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "2024",
+        "drivers": ["VER-RED", "NOR-MCL", "LEC-FER"],
+        "drivers-points": [437, 374, 356],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["MCL", "FER", "RED"],
+        "teams-points": [666, 652, 589],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "2023",
+        "drivers": ["VER-RED", "PER-RED", "HAM-MER"],
+        "drivers-points": [575, 285, 234],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["RED", "MER", "FER"],
+        "teams-points": [860, 409, 406],
+        "team-color": "rgb(54, 113, 198)"
+    },
+    {
+        "number": "2022",
+        "drivers": ["VER-RED", "LEC-FER", "PER-RED"],
+        "drivers-points": [454, 308, 305],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["RED", "FER", "MER"],
+        "teams-points": [759, 554, 515],
+        "team-color": "rgb(54, 113, 198)"
+    },
+    {
+        "number": "2021",
+        "drivers": ["VER-RED", "HAM-MER", "BOT-MER"],
+        "drivers-points": [395.5, 387.5, 226],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["MER", "RED", "FER"],
+        "teams-points": [613.5, 585.5, 323.5],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2020",
+        "drivers": ["HAM-MER", "BOT-MER", "VER-RED"],
+        "drivers-points": [347, 223, 214],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "RED", "MCL"],
+        "teams-points": [573, 319, 202],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2019",
+        "era": "2010s",
+        "drivers": ["HAM-MER", "BOT-MER", "VER-RED"],
+        "drivers-points": [413, 326, 278],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "FER", "RED"],
+        "teams-points": [739, 504, 417],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2018",
+        "drivers": ["HAM-MER", "VET-FER", "RAI-FER"],
+        "drivers-points": [408, 320, 251],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "FER", "RED"],
+        "teams-points": [655, 571, 419],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2017",
+        "drivers": ["HAM-MER", "VET-FER", "BOT-MER"],
+        "drivers-points": [363, 317, 305],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "FER", "RED"],
+        "teams-points": [668, 522, 368],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2016",
+        "drivers": ["ROS-MER", "HAM-MER", "RIC-RED"],
+        "drivers-points": [385, 380, 256],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "RED", "FER"],
+        "teams-points": [765, 468, 398],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2015",
+        "drivers": ["HAM-MER", "ROS-MER", "VET-RED"],
+        "drivers-points": [381, 322, 278],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "FER", "WIL"],
+        "teams-points": [703, 428, 257],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2014",
+        "drivers": ["HAM-MER", "ROS-MER", "RIC-RED"],
+        "drivers-points": [384, 317, 238],
+        "driver-color": "rgb(39, 244, 210)",
+        "teams": ["MER", "RED", "WIL"],
+        "teams-points": [701, 405, 320],
+        "team-color": "rgb(39, 244, 210)"
+    },
+    {
+        "number": "2013",
+        "drivers": ["VET-RED", "ALO-FER", "WEB-RED"],
+        "drivers-points": [397, 242, 199],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["RED", "MER", "FER"],
+        "teams-points": [596, 360, 354],
+        "team-color": "rgb(54, 113, 198)"
+    },
+    {
+        "number": "2012",
+        "drivers": ["VET-RED", "ALO-FER", "RAI-LOT" ],
+        "drivers-points": [281, 278, 207],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["RED", "FER", "MCL"],
+        "teams-points": [460, 400, 378],
+        "team-color": "rgb(54, 113, 198)"
+    },
+    {
+        "number": "2011",
+        "drivers": ["VET-RED", "BUT-MCL", "WEB-RED"],
+        "drivers-points": [392, 270, 258],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["RED", "MCL", "FER"],
+        "teams-points": [650, 497, 375],
+        "team-color": "rgb(54, 113, 198)"
+    },
+    {
+        "number": "2010",
+        "drivers": ["VET-RED", "ALO-FER", "WEB-RED"],
+        "drivers-points": [256, 252, 242],
+        "driver-color": "rgb(54, 113, 198)",
+        "teams": ["RED", "MCL", "FER"],
+        "teams-points": [498, 454, 396],
+        "team-color": "rgb(54, 113, 198)"
+    },
+    {
+        "number": "2009",
+        "era": "2000s",
+        "drivers": ["BUT-BRA", "VET-RED", "BAR-BRA"],
+        "drivers-points": [95, 84, 77],
+        "driver-color": "rgb(255, 255, 255)",
+        "teams": ["BRA", "RED", "MCL"],
+        "teams-points": [172, 153.5, 71],
+        "team-color": "rgb(255, 255, 255)"
+    },
+    {
+        "number": "2008",
+        "drivers": ["HAM-MCL", "MAS-FER", "RAI-FER"],
+        "drivers-points": [98, 97, 75],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["FER", "MCL", "SAU"],
+        "teams-points": [172, 151, 135],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "2007",
+        "drivers": ["RAI-FER", "HAM-MCL", "ALO-MCL"],
+        "drivers-points": [110, 109, 109],
+        "driver-color": "rgb(232, 0, 32)",
+        "teams": ["FER", "SAU", "REN"],
+        "teams-points": [204, 101, 51],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "2006",
+        "drivers": ["ALO-REN", "SCH-FER", "MAS-FER"],
+        "drivers-points": [134, 121, 80],
+        "driver-color": "rgb(255, 255, 0)",
+        "teams": ["REN", "FER", "MCL"],
+        "teams-points": [206, 201, 110],
+        "team-color": "rgb(255, 255, 0)"
+    },
+    {
+        "number": "2005",
+        "drivers": ["ALO-REN", "RAI-MCL", "SCH-FER"],
+        "drivers-points": [133, 112, 62],
+        "driver-color": "rgb(255, 255, 0)",
+        "teams": ["REN", "MCL", "FER"],
+        "teams-points": [191, 182, 100],
+        "team-color": "rgb(255, 255, 0)"
+    },
+    {
+        "number": "2004",
+        "drivers": ["SCH-FER", "BAR-FER", "BUT-BAR"],
+        "drivers-points": [148, 114, 85],
+        "driver-color": "rgb(232, 0, 32)",
+        "teams": ["FER", "BAR", "REN"],
+        "teams-points": [262, 119, 105],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "2003",
+        "drivers": ["SCH-FER", "RAI-MCL", "MON-WIL"],
+        "drivers-points": [93, 91, 82],
+        "driver-color": "rgb(232, 0, 32)",
+        "teams": ["FER", "WIL", "MCL"],
+        "teams-points": [158, 144, 142],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "2002",
+        "drivers": ["SCH-FER", "BAR-FER", "MON-WIL"],
+        "drivers-points": [144, 77, 50],
+        "driver-color": "rgb(232, 0, 32)",
+        "teams": ["FER", "WIL", "MCL"],
+        "teams-points": [221, 92, 65],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "2001",
+        "drivers": ["SCH-FER", "COU-MCL", "BAR-FER"],
+        "drivers-points": [123, 65, 56],
+        "driver-color": "rgb(232, 0, 32)",
+        "teams": ["FER", "MCL", "WIL"],
+        "teams-points": [179, 102, 80],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "2000",
+        "drivers": ["SCH-FER", "HAK-MCL", "COU-MCL"],
+        "drivers-points": [108, 89, 73],
+        "driver-color": "rgb(232, 0, 32)",
+        "teams": ["FER", "MCL", "WIL"],
+        "teams-points": [170, 152, 36],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "1999",
+        "era": "1990s",
+        "drivers": ["HAK-MCL", "IRV-FER", "FRE-JOR"],
+        "drivers-points": [76, 74, 54],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["FER", "MCL", "JOR"],
+        "teams-points": [128, 124, 61],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "1998",
+        "drivers": ["HAK-MCL", "SCH-FER", "COU-MCL"],
+        "drivers-points": [100, 86, 56],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "FER", "WIL"],
+        "teams-points": [156, 133, 38],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1997",
+        "drivers": ["VIL-WIL", "FRE-WIL", "COU-MCL"],
+        "drivers-points": [81, 42, 36],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["WIL", "FER", "BEN"],
+        "teams-points": [123, 102, 67],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1996",
+        "drivers": ["HIL-WIL", "VIL-WIL", "SCH-FER"],
+        "drivers-points": [97, 78, 59],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["WIL", "FER", "BEN"],
+        "teams-points": [175, 70, 68],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1995",
+        "drivers": ["SCH-BEN", "HIL-WIL", "COU-WIL"],
+        "drivers-points": [102, 69, 49],
+        "driver-color": "rgb(0, 136, 96)",
+        "teams": ["BEN", "WIL", "FER"],
+        "teams-points": [137, 112, 73],
+        "team-color": "rgb(0, 136, 96)"
+    },
+    {
+        "number": "1994",
+        "drivers": ["SCH-BEN", "HIL-WIL", "BER-FER"],
+        "drivers-points": [92, 91, 41],
+        "driver-color": "rgb(0, 136, 96)",
+        "teams": ["WIL", "BEN", "FER"],
+        "teams-points": [118, 103, 71],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1993",
+        "drivers": ["PRO-WIL", "SEN-MCL", "HIL-WIL"],
+        "drivers-points": [99, 73, 69],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["WIL", "MCL", "BEN"],
+        "teams-points": [168, 84, 72],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1992",
+        "drivers": ["MAN-WIL", "PAT-WIL", "SCH-BEN"],
+        "drivers-points": [108, 56, 53],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["WIL", "MCL", "BEN"],
+        "teams-points": [164, 99, 91],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1991",
+        "drivers": ["SEN-MCL", "MAN-WIL", "PAT-WIL"],
+        "drivers-points": [96, 72, 53],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "WIL", "FER"],
+        "teams-points": [139, 125, 55.5],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1990",
+        "drivers": ["SEN-MCL", "PRO-FER", "PIQ-BEN"],
+        "drivers-points": [78, 71, 43],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "FER", "BEN"],
+        "teams-points": [121, 110, 71],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1989",
+        "era": "1980s",
+        "drivers": ["PRO-MCL", "SEN-MCL", "PAT-WIL"],
+        "drivers-points": [76, 60, 40],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "WIL", "FER"],
+        "teams-points": [141, 77, 59],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1988",
+        "drivers": ["SEN-MCL", "PRO-MCL", "BER-FER"],
+        "drivers-points": [90, 87, 41],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "FER", "BEN"],
+        "teams-points": [199, 65, 39],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1987",
+        "drivers": ["PIQ-WIL", "MAN-WIL", "SEN-LOT"],
+        "drivers-points": [73, 61, 57],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["WIL", "MCL", "LOT"],
+        "teams-points": [137, 76, 64],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1986",
+        "drivers": ["PRO-MCL", "MAN-WIL", "PIQ-WIL"],
+        "drivers-points": [72, 70, 69],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["WIL", "MCL", "LOT"],
+        "teams-points": [141, 96, 58],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1985",
+        "drivers": ["PRO-MCL", "ALB-FER", "ROS-WIL"],
+        "drivers-points": [73, 53, 40],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "FER", "LOT"],
+        "teams-points": [90, 82, 71],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1984",
+        "drivers": ["LAU-MCL", "PRO-MCL", "DEA-LOT"],
+        "drivers-points": [72, 71.5, 34],
+        "driver-color": "rgb(255, 128, 0)",
+        "teams": ["MCL", "FER", "LOT"],
+        "teams-points": [143.5, 57.5, 47],
+        "team-color": "rgb(255, 128, 0)"
+    },
+    {
+        "number": "1983",
+        "drivers": ["PIQ-BRA", "PRO-REN", "ARN-FER"],
+        "drivers-points": [59, 57, 49],
+        "driver-color": "rgb(255, 255, 255)",
+        "teams": ["FER", "REN", "BRA"],
+        "teams-points": [89, 79, 72],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "1982",
+        "drivers": ["ROS-WIL", "PIR-FER", "WAT-MCL"],
+        "drivers-points": [44, 39, 39],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["FER", "MCL", "REN"],
+        "teams-points": [74, 69, 62],
+        "team-color": "rgb(232, 0, 32)"
+    },
+    {
+        "number": "1981",
+        "drivers": ["PIQ-BRA", "REU-WIL", "JON-WIL"],
+        "drivers-points": [50, 49, 46],
+        "driver-color": "rgb(255, 255, 255)",
+        "teams": ["WIL", "BRA", "REN"],
+        "teams-points": [95, 61, 54],
+        "team-color": "rgb(100, 196, 255)"
+    },
+    {
+        "number": "1980",
+        "drivers": ["JON-WIL", "PIQ-BRA", "REU-WIL"],
+        "drivers-points": [67, 54, 42],
+        "driver-color": "rgb(100, 196, 255)",
+        "teams": ["WIL", "LIG", "BRA"],
+        "teams-points": [120, 66, 55],
+        "team-color": "rgb(100, 196, 255)"
+    }
+]

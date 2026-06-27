@@ -1,240 +1,693 @@
 [
     {
-        "number": "2025",
-        "era": "Ground Effect Era",
-        "drivers": ["NOR-MCL", "VER-RED", "PIA-MCL"],
-        "drivers-points": [423, 421, 410],
-        "driver-color": "rgb(255, 128, 0)",
-        "teams": ["MCL", "RED", "MER"],
-        "teams-points": [833, 469, 451],
-        "team-color": "rgb(255, 128, 0)"
+        "year": "2025",
+        "driver": "NOR-MCL",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
     },
     {
-        "number": "2024",
-        "drivers": ["VER-RED", "NOR-MCL", "LEC-FER"],
-        "drivers-points": [437, 374, 356],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["MCL", "FER", "RED"],
-        "teams-points": [666, 652, 589],
-        "team-color": "rgb(255, 128, 0)"
+        "year": "2024",
+        "driver": "VER-RED",
+        "driverFlag": "Netherlands",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
     },
     {
-        "number": "2023",
-        "drivers": ["VER-RED", "PER-RED", "HAM-MER"],
-        "drivers-points": [575, 285, 234],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["RED", "MER", "FER"],
-        "teams-points": [860, 409, 406],
-        "team-color": "rgb(54, 113, 198)"
+        "year": "2023",
+        "driver": "VER-RED",
+        "driverFlag": "Netherlands",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "RED",
+        "teamFlag": "Austria",
+        "teamColor": "rgb(54, 113, 198)"
     },
     {
-        "number": "2022",
-        "drivers": ["VER-RED", "LEC-FER", "PER-RED"],
-        "drivers-points": [454, 308, 305],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["RED", "FER", "MER"],
-        "teams-points": [759, 554, 515],
-        "team-color": "rgb(54, 113, 198)"
+        "year": "2022",
+        "driver": "VER-RED",
+        "driverFlag": "Netherlands",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "RED",
+        "teamFlag": "Austria",
+        "teamColor": "rgb(54, 113, 198)"
     },
     {
-        "number": "2021",
-        "era": "Hybrid Era",
-        "drivers": ["VER-RED", "HAM-MER", "BOT-MER"],
-        "drivers-points": [395.5, 387.5, 226],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["MER", "RED", "FER"],
-        "teams-points": [613.5, 585.5, 323.5],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2021",
+        "driver": "VER-RED",
+        "driverFlag": "Netherlands",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2020",
-        "drivers": ["HAM-MER", "BOT-MER", "VER-RED"],
-        "drivers-points": [347, 223, 214],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "RED", "MCL"],
-        "teams-points": [573, 319, 202],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2020",
+        "driver": "HAM-MER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2019",
-        "drivers": ["HAM-MER", "BOT-MER", "VER-RED"],
-        "drivers-points": [413, 326, 278],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "FER", "RED"],
-        "teams-points": [739, 504, 417],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2019",
+        "era": "2010s",
+        "driver": "HAM-MER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2018",
-        "drivers": ["HAM-MER", "VET-FER", "RAI-FER"],
-        "drivers-points": [408, 320, 251],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "FER", "RED"],
-        "teams-points": [655, 571, 419],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2018",
+        "driver": "HAM-MER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2017",
-        "drivers": ["HAM-MER", "VET-FER", "BOT-MER"],
-        "drivers-points": [363, 317, 305],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "FER", "RED"],
-        "teams-points": [668, 522, 368],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2017",
+        "driver": "HAM-MER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2016",
-        "drivers": ["ROS-MER", "HAM-MER", "RIC-RED"],
-        "drivers-points": [385, 380, 256],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "RED", "FER"],
-        "teams-points": [765, 468, 398],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2016",
+        "driver": "ROS-MER",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2015",
-        "drivers": ["HAM-MER", "ROS-MER", "VET-RED"],
-        "drivers-points": [381, 322, 278],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "FER", "WIL"],
-        "teams-points": [703, 428, 257],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2015",
+        "driver": "HAM-MER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2014",
-        "drivers": ["HAM-MER", "ROS-MER", "RIC-RED"],
-        "drivers-points": [384, 317, 238],
-        "driver-color": "rgb(39, 244, 210)",
-        "teams": ["MER", "RED", "WIL"],
-        "teams-points": [701, 405, 320],
-        "team-color": "rgb(39, 244, 210)"
+        "year": "2014",
+        "driver": "HAM-MER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
     },
     {
-        "number": "2013",
-        "era": "V8 Engine Era",
-        "drivers": ["VET-RED", "ALO-FER", "WEB-RED"],
-        "drivers-points": [397, 242, 199],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["RED", "MER", "FER"],
-        "teams-points": [596, 360, 354],
-        "team-color": "rgb(54, 113, 198)"
+        "year": "2013",
+        "driver": "VET-RED",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "RED",
+        "teamFlag": "Austria",
+        "teamColor": "rgb(54, 113, 198)"
     },
     {
-        "number": "2012",
-        "drivers": ["VET-RED", "ALO-FER", "RAI-LOT" ],
-        "drivers-points": [281, 278, 207],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["RED", "FER", "MCL"],
-        "teams-points": [460, 400, 378],
-        "team-color": "rgb(54, 113, 198)"
+        "year": "2012",
+        "driver": "VET-RED",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "RED",
+        "teamFlag": "Austria",
+        "teamColor": "rgb(54, 113, 198)"
     },
     {
-        "number": "2011",
-        "drivers": ["VET-RED", "BUT-MCL", "WEB-RED"],
-        "drivers-points": [392, 270, 258],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["RED", "MCL", "FER"],
-        "teams-points": [650, 497, 375],
-        "team-color": "rgb(54, 113, 198)"
+        "year": "2011",
+        "driver": "VET-RED",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "RED",
+        "teamFlag": "Austria",
+        "teamColor": "rgb(54, 113, 198)"
     },
     {
-        "number": "2010",
-        "drivers": ["VET-RED", "ALO-FER", "WEB-RED"],
-        "drivers-points": [256, 252, 242],
-        "driver-color": "rgb(54, 113, 198)",
-        "teams": ["RED", "MCL", "FER"],
-        "teams-points": [498, 454, 396],
-        "team-color": "rgb(54, 113, 198)"
+        "year": "2010",
+        "driver": "VET-RED",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "RED",
+        "teamFlag": "Austria",
+        "teamColor": "rgb(54, 113, 198)"
     },
     {
-        "number": "2009",
-        "drivers": ["BUT-BRA", "VET-RED", "BAR-BRA"],
-        "drivers-points": [95, 84, 77],
-        "driver-color": "rgb(255, 255, 255)",
-        "teams": ["BRA", "RED", "MCL"],
-        "teams-points": [172, 153.5, 71],
-        "team-color": "rgb(255, 255, 255)"
+        "year": "2009",
+        "era": "2000s",
+        "driver": "BUT-BRA",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(255, 255, 255)",
+        "team": "BRA",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 255, 255)"
     },
     {
-        "number": "2008",
-        "drivers": ["HAM-MCL", "MAS-FER", "RAI-FER"],
-        "drivers-points": [98, 97, 75],
-        "driver-color": "rgb(255, 128, 0)",
-        "teams": ["FER", "MCL", "SAU"],
-        "teams-points": [172, 151, 135],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2008",
+        "driver": "HAM-MCL",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
     },
     {
-        "number": "2007",
-        "drivers": ["RAI-FER", "HAM-MCL", "ALO-MCL"],
-        "drivers-points": [110, 109, 109],
-        "driver-color": "rgb(232, 0, 32)",
-        "teams": ["FER", "SAU", "REN"],
-        "teams-points": [204, 101, 51],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2007",
+        "driver": "RAI-FER",
+        "driverFlag": "Finland",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
     },
     {
-        "number": "2006",
-        "drivers": ["ALO-REN", "SCH-FER", "MAS-FER"],
-        "drivers-points": [134, 121, 80],
-        "driver-color": "rgb(255, 255, 0)",
-        "teams": ["REN", "FER", "MCL"],
-        "teams-points": [206, 201, 110],
-        "team-color": "rgb(255, 255, 0)"
+        "year": "2006",
+        "driver": "ALO-REN",
+        "driverFlag": "Spain",
+        "driverColor": "rgb(255, 255, 0)",
+        "team": "REN",
+        "teamFlag": "France",
+        "teamColor": "rgb(255, 255, 0)"
     },
     {
-        "number": "2005",
-        "era": "V10",
-        "drivers": ["ALO-REN", "RAI-MCL", "SCH-FER"],
-        "drivers-points": [133, 112, 62],
-        "driver-color": "rgb(255, 255, 0)",
-        "teams": ["REN", "MCL", "FER"],
-        "teams-points": [191, 182, 100],
-        "team-color": "rgb(255, 255, 0)"
+        "year": "2005",
+        "driver": "ALO-REN",
+        "driverFlag": "Spain",
+        "driverColor": "rgb(255, 255, 0)",
+        "team": "REN",
+        "teamFlag": "France",
+        "teamColor": "rgb(255, 255, 0)"
     },
     {
-        "number": "2004",
-        "drivers": ["SCH-FER", "BAR-FER", "BUT-BAR"],
-        "drivers-points": [148, 114, 85],
-        "driver-color": "rgb(232, 0, 32)",
-        "teams": ["FER", "BAR", "REN"],
-        "teams-points": [262, 119, 105],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2004",
+        "driver": "SCH-FER",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
     },
     {
-        "number": "2003",
-        "drivers": ["SCH-FER", "RAI-MCL", "MON-WIL"],
-        "drivers-points": [93, 91, 82],
-        "driver-color": "rgb(232, 0, 32)",
-        "teams": ["FER", "WIL", "MCL"],
-        "teams-points": [158, 144, 142],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2003",
+        "driver": "SCH-FER",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
     },
     {
-        "number": "2002",
-        "drivers": ["SCH-FER", "BAR-FER", "MON-WIL"],
-        "drivers-points": [144, 77, 50],
-        "driver-color": "rgb(232, 0, 32)",
-        "teams": ["FER", "WIL", "MCL"],
-        "teams-points": [221, 92, 65],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2002",
+        "driver": "SCH-FER",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
     },
     {
-        "number": "2001",
-        "drivers": ["SCH-FER", "COU-MCL", "BAR-FER"],
-        "drivers-points": [123, 65, 56],
-        "driver-color": "rgb(232, 0, 32)",
-        "teams": ["FER", "MCL", "WIL"],
-        "teams-points": [179, 102, 80],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2001",
+        "driver": "SCH-FER",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
     },
     {
-        "number": "2000",
-        "drivers": ["SCH-FER", "HAK-MCL", "COU-MCL"],
-        "drivers-points": [108, 89, 73],
-        "driver-color": "rgb(232, 0, 32)",
-        "teams": ["FER", "MCL", "WIL"],
-        "teams-points": [170, 152, 36],
-        "team-color": "rgb(232, 0, 32)"
+        "year": "2000",
+        "driver": "SCH-FER",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1999",
+        "era": "1990s",
+        "driver": "HAK-MCL",
+        "driverFlag": "Finland",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1998",
+        "driver": "HAK-MCL",
+        "driverFlag": "Finland",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1997",
+        "driver": "VIL-WIL",
+        "driverFlag": "Canada",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1996",
+        "driver": "HIL-WIL",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1995",
+        "driver": "SCH-BEN",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(0, 136, 96)",
+        "team": "BEN",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(0, 136, 96)"
+    },
+    {
+        "year": "1994",
+        "driver": "SCH-BEN",
+        "driverFlag": "Germany",
+        "driverColor": "rgb(0, 136, 96)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1993",
+        "driver": "PRO-WIL",
+        "driverFlag": "France",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1992",
+        "driver": "MAN-WIL",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1991",
+        "driver": "SEN-MCL",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1990",
+        "driver": "SEN-MCL",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1989",
+        "era": "1980s",
+        "driver": "PRO-MCL",
+        "driverFlag": "France",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1988",
+        "driver": "SEN-MCL",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1987",
+        "driver": "PIQ-WIL",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1986",
+        "driver": "PRO-MCL",
+        "driverFlag": "France",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1985",
+        "driver": "PRO-MCL",
+        "driverFlag": "France",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1984",
+        "driver": "LAU-MCL",
+        "driverFlag": "Austria",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1983",
+        "driver": "PIQ-BRA",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(255, 255, 255)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1982",
+        "driver": "ROS-WIL",
+        "driverFlag": "Finland",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1981",
+        "driver": "PIQ-BRA",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(255, 255, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1980",
+        "driver": "JON-WIL",
+        "driverFlag": "Australia",
+        "driverColor": "rgb(100, 196, 255)",
+        "team": "WIL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(100, 196, 255)"
+    },
+    {
+        "year": "1979",
+        "era": "1970s",
+        "driver": "SCH-FER",
+        "driverFlag": "South_Africa",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1978",
+        "driver": "AND-LOT",
+        "driverFlag": "United_States_of_America",
+        "driverColor": "rgb(182, 154, 91)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1977",
+        "driver": "LAU-FER",
+        "driverFlag": "Austria",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1976",
+        "driver": "HUN-MCL",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1975",
+        "driver": "LAU-FER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1974",
+        "driver": "FIT-MCL",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(255, 128, 0)",
+        "team": "MCL",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 128, 0)"
+    },
+    {
+        "year": "1973",
+        "driver": "STE-TYR",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1972",
+        "driver": "FIT-LOT",
+        "driverFlag": "Brazil",
+        "driverColor": "rgb(182, 154, 91)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1971",
+        "driver": "STE-TYR",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(54, 113, 198)",
+        "team": "TYR",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(54, 113, 198)"
+    },
+    {
+        "year": "1970",
+        "driver": "RIN-LOT",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(182, 154, 91)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1969",
+        "era": "1960s",
+        "driver": "STE-MAT",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(0, 147, 204)",
+        "team": "MAT",
+        "teamFlag": "France",
+        "teamColor": "rgb(0, 147, 204)"
+    },
+    {
+        "year": "1968",
+        "driver": "HIL-LOT",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(182, 154, 91)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1967",
+        "driver": "HUL-BRA",
+        "driverFlag": "New_Zealand",
+        "driverColor": "rgb(255, 255, 255)",
+        "team": "BRA",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 255, 255)"
+    },
+    {
+        "year": "1966",
+        "driver": "BRA-BRA",
+        "driverFlag": "Australia",
+        "driverColor": "rgb(255, 255, 255)",
+        "team": "BRA",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(255, 255, 255)"
+    },
+    {
+        "year": "1965",
+        "driver": "CLA-LOT",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(182, 154, 91)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1964",
+        "driver": "SUR-FER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1963",
+        "driver": "CLA-LOT",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(182, 154, 91)",
+        "team": "LOT",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(182, 154, 91)"
+    },
+    {
+        "year": "1962",
+        "driver": "HIL-BRM",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(0, 136, 96)",
+        "team": "BRM",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(0, 136, 96)"
+    },
+    {
+        "year": "1961",
+        "driver": "HIL-FER",
+        "driverFlag": "United_States_of_America",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "FER",
+        "teamFlag": "Italy",
+        "teamColor": "rgb(232, 0, 32)"
+    },
+    {
+        "year": "1960",
+        "driver": "BRA-COO",
+        "driverFlag": "Australia",
+        "driverColor": "rgb(0, 136, 96)",
+        "team": "COO",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(0, 136, 96)"
+    },
+    {
+        "year": "1959",
+        "era": "1950s",
+        "driver": "BRA-COO",
+        "driverFlag": "Australia",
+        "driverColor": "rgb(0, 136, 96)",
+        "team": "COO",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(0, 136, 96)"
+    },
+    {
+        "year": "1958",
+        "driver": "HAW-FER",
+        "driverFlag": "United_Kingdom",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "VAN",
+        "teamFlag": "United_Kingdom",
+        "teamColor": "rgb(0, 136, 96)"
+    },
+    {
+        "year": "1957",
+        "driver": "FAN-MAS",
+        "driverFlag": "Argentina",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1956",
+        "driver": "FAN-FER",
+        "driverFlag": "Argentina",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1955",
+        "driver": "FAN-MER",
+        "driverFlag": "Argentina",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1954",
+        "driver": "FAN-MER",
+        "driverFlag": "Argentina",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1953",
+        "driver": "ASC-FER",
+        "driverFlag": "Italy",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1952",
+        "driver": "ASC-FER",
+        "driverFlag": "Italy",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1951",
+        "driver": "FAN-ALF",
+        "driverFlag": "Argentina",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
+    },
+    {
+        "year": "1950",
+        "driver": "FAR-ALF",
+        "driverFlag": "Italy",
+        "driverColor": "rgb(232, 0, 32)",
+        "team": "",
+        "teamFlag": "",
+        "teamColor": "rgb(0, 0, 0)"
     }
 ]
