@@ -3,9 +3,25 @@
         "name": "ODO 2",
         "flag": "Ireland",
         "points": [
-            0, 2, "", "", "", ""],
+            0, 2, 0, "", "", ""],
         "points_sum": [
-            0, 2],
+            0, 2, 2],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(0, 0, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "HED 5",
+        "flag": "Sweden",
+        "points": [
+            "DNS", "DNS", 10, "", "", ""],
+        "points_sum": [
+            0, 0, 10],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -19,9 +35,9 @@
         "name": "BAU 6",
         "flag": "Latvia",
         "points": [
-            2, "DNS", "", "", "", ""],
+            2, "DNS", "DNS", "", "", ""],
         "points_sum": [
-            2, 2],
+            2, 2, 2],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -35,9 +51,9 @@
         "name": "ODO 7",
         "flag": "Ireland",
         "points": [
-            19, 7, "", "", "", ""],
+            19, 7, 3, "", "", ""],
         "points_sum": [
-            19, 26],
+            19, 26, 29],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -51,13 +67,13 @@
         "name": "KRI 8",
         "flag": "Sweden",
         "points": [
-            40, 24, "", "", "", ""],
+            40, 24, 40, "", "", ""],
         "points_sum": [
-            40, 64],
+            40, 64, 104],
         "win": [
-            1, 0, 0, 0, 0, 0],
+            1, 0, 1, 0, 0, 0],
         "podium": [
-            1, 0, 0, 0, 0, 0],
+            1, 0, 1, 0, 0, 0],
         "pole": [
             0, 1, 0, 0, 0, 0],
         "borderColor": "rgb(255, 0, 0)",
@@ -67,9 +83,9 @@
         "name": "KON 9",
         "flag": "Hungary",
         "points": [
-            11, "DNS", "", "", "", ""],
+            11, "DNS", "DNS", "", "", ""],
         "points_sum": [
-            11, 11],
+            11, 11, 11],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -83,9 +99,9 @@
         "name": "OLI 10",
         "flag": "Portugal",
         "points": [
-            3, 0, "", "", "", ""],
+            3, 0, 1, "", "", ""],
         "points_sum": [
-            3, 3],
+            3, 3, 4],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -99,9 +115,9 @@
         "name": "TAM 11",
         "flag": "Estonia",
         "points": [
-            6, "DNS", "", "", "", ""],
+            6, "DNS", "DNS", "", "", ""],
         "points_sum": [
-            6, 6],
+            6, 6, 6],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -115,9 +131,9 @@
         "name": "BEN 12",
         "flag": "France",
         "points": [
-            "DNS", 2, "", "", "", ""],
+            "DNS", 2, "DNS", "", "", ""],
         "points_sum": [
-            0, 2],
+            0, 2, 2],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -131,9 +147,9 @@
         "name": "BAK 13",
         "flag": "Norway",
         "points": [
-            25, 40, "", "", "", ""],
+            25, 40, 20, "", "", ""],
         "points_sum": [
-            25, 65],
+            25, 65, 85],
         "win": [
             0, 1, 0, 0, 0, 0],
         "podium": [
@@ -147,9 +163,9 @@
         "name": "BAC 14",
         "flag": "Lithuania",
         "points": [
-            9, "DNS", "", "", "", ""],
+            9, "DNS", "DNS", "", "", ""],
         "points_sum": [
-            9, 9],
+            9, 9, 9],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -160,12 +176,28 @@
         "borderDash": []
     },
     {
+        "name": "OHM 17",
+        "flag": "Sweden",
+        "points": [
+            "DNS", "DNS", 3, "", "", ""],
+        "points_sum": [
+            0, 0, 3],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
         "name": "RYT 18",
         "flag": "Finland",
         "points": [
-            17, 31, "", "", "", ""],
+            17, 31, 24, "", "", ""],
         "points_sum": [
-            17, 48],
+            17, 48, 72],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -179,9 +211,9 @@
         "name": "TUR 20",
         "flag": "Finland",
         "points": [
-            25, 28, "", "", "", ""],
+            25, 28, 12, "", "", ""],
         "points_sum": [
-            25, 53],
+            25, 53, 65],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -195,9 +227,9 @@
         "name": "LAR 22",
         "flag": "Norway",
         "points": [
-            0, "DNS", "", "", "", ""],
+            0, "DNS", "DNS", "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -211,9 +243,9 @@
         "name": "TIK 23",
         "flag": "Estonia",
         "points": [
-            0, "DNS", "", "", "", ""],
+            0, "DNS", "DNS", "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -227,9 +259,9 @@
         "name": "SEP 24",
         "flag": "Finland",
         "points": [
-            3, 3, "", "", "", ""],
+            3, 3, 2, "", "", ""],
         "points_sum": [
-            3, 6],
+            3, 6, 8],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -243,9 +275,9 @@
         "name": "KIS 27",
         "flag": "Hungary",
         "points": [
-            "DNS", 2, "", "", "", ""],
+            "DNS", 2, "DNS", "", "", ""],
         "points_sum": [
-            0, 2],
+            0, 2, 2],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -256,12 +288,28 @@
         "borderDash": []
     },
     {
+        "name": "THO 28",
+        "flag": "Sweden",
+        "points": [
+            "DNS", "DNS", 0, "", "", ""],
+        "points_sum": [
+            0, 0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
         "name": "PAI 29",
         "flag": "France",
         "points": [
-            0, 11, "", "", "", ""],
+            0, 11, 7, "", "", ""],
         "points_sum": [
-            0, 11],
+            0, 11, 18],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -275,9 +323,25 @@
         "name": "VOL 30",
         "flag": "Germany",
         "points": [
-            2, 3, "", "", "", ""],
+            2, 3, 3, "", "", ""],
         "points_sum": [
-            2, 5],
+            2, 5, 8],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
+        "name": "KRI 32",
+        "flag": "Sweden",
+        "points": [
+            "DNS", "DNS", 2, "", "", ""],
+        "points_sum": [
+            0, 0, 2],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -291,9 +355,9 @@
         "name": "LIN 33",
         "flag": "Denmark",
         "points": [
-            8, 1, "", "", "", ""],
+            8, 1, 15, "", "", ""],
         "points_sum": [
-            8, 9],
+            8, 9, 24],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -307,13 +371,13 @@
         "name": "JAN 36",
         "flag": "Sweden",
         "points": [
-            10, 16, "", "", "", ""],
+            10, 16, 28, "", "", ""],
         "points_sum": [
-            10, 26],
+            10, 26, 54],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
-            0, 0, 0, 0, 0, 0],
+            0, 0, 1, 0, 0, 0],
         "pole": [
             0, 0, 0, 0, 0, 0],
         "borderColor": "rgb(0, 0, 255)",
@@ -323,9 +387,9 @@
         "name": "AUG 38",
         "flag": "Germany",
         "points": [
-            0, 1, "", "", "", ""],
+            0, 1, 3, "", "", ""],
         "points_sum": [
-            0, 1],
+            0, 1, 4],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -339,9 +403,9 @@
         "name": "BEC 44",
         "flag": "Slovakia",
         "points": [
-            "DNS", 0, "", "", "", ""],
+            "DNS", 0, "DNS", "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -355,9 +419,9 @@
         "name": "MOZ 50",
         "flag": "Hungary",
         "points": [
-            "DNS", 0, "", "", "", ""],
+            "DNS", 0, 0, "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -371,9 +435,9 @@
         "name": "MOZ 51",
         "flag": "Hungary",
         "points": [
-            2, 3, "", "", "", ""],
+            2, 3, 2, "", "", ""],
         "points_sum": [
-            2, 5],
+            2, 5, 7],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -387,9 +451,9 @@
         "name": "PLE 55",
         "flag": "Lithuania",
         "points": [
-            2, 6, "", "", "", ""],
+            2, 6, 8, "", "", ""],
         "points_sum": [
-            2, 8],
+            2, 8, 16],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -403,9 +467,9 @@
         "name": "ENL 60",
         "flag": "Sweden",
         "points": [
-            0, 0, "", "", "", ""],
+            0, 0, 10, "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 10],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -419,9 +483,9 @@
         "name": "LIT 66",
         "flag": "Poland",
         "points": [
-            3, 10, "", "", "", ""],
+            3, 10, "DNS", "", "", ""],
         "points_sum": [
-            3, 13],
+            3, 13, 13],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -435,9 +499,25 @@
         "name": "RAF 67",
         "flag": "Norway",
         "points": [
-            1, 8, "", "", "", ""],
+            1, 8, 2, "", "", ""],
         "points_sum": [
-            1, 9],
+            1, 9, 11],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 255, 255)",
+        "borderDash": []
+    },
+    {
+        "name": "BEL 69",
+        "flag": "Netherlands",
+        "points": [
+            "DNS", "DNS", 0, "", "", ""],
+        "points_sum": [
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -451,9 +531,9 @@
         "name": "KAR 73",
         "flag": "Hungary",
         "points": [
-            0, 3, "", "", "", ""],
+            0, 3, "DNS", "", "", ""],
         "points_sum": [
-            0, 3],
+            0, 3, 3],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -467,9 +547,9 @@
         "name": "MUE 77",
         "flag": "Germany",
         "points": [
-            0, 0, "", "", "", ""],
+            0, 0, 7, "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 7],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -480,12 +560,28 @@
         "borderDash": []
     },
     {
+        "name": "OST 85",
+        "flag": "Norway",
+        "points": [
+            "DNS", "DNS", 1, "", "", ""],
+        "points_sum": [
+            0, 0, 1],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 255)",
+        "borderDash": []
+    },
+    {
         "name": "TRE 88",
         "flag": "Hungary",
         "points": [
-            8, 9, "", "", "", ""],
+            8, 9, "DNS", "", "", ""],
         "points_sum": [
-            8, 17],
+            8, 17, 17],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -499,15 +595,15 @@
         "name": "VEI 96",
         "flag": "Norway",
         "points": [
-            33, 21, "", "", "", ""],
+            33, 21, 30, "", "", ""],
         "points_sum": [
-            33, 54],
+            33, 54, 84],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
-            1, 0, 0, 0, 0, 0],
+            1, 0, 1, 0, 0, 0],
         "pole": [
-            1, 0, 0, 0, 0, 0],
+            1, 0, 1, 0, 0, 0],
         "borderColor": "rgb(255, 0, 0)",
         "borderDash": []
     },
@@ -515,9 +611,9 @@
         "name": "RIB 99",
         "flag": "Portugal",
         "points": [
-            "DNS", 2, "", "", "", ""],
+            "DNS", 2, 1, "", "", ""],
         "points_sum": [
-            0, 2],
+            0, 2, 3],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -528,12 +624,28 @@
         "borderDash": []
     },
     {
+        "name": "TAN 100",
+        "flag": "Norway",
+        "points": [
+            "DNS", "DNS", 0, "", "", ""],
+        "points_sum": [
+            0, 0, 0],
+        "win": [
+            0, 0, 0, 0, 0, 0],
+        "podium": [
+            0, 0, 0, 0, 0, 0],
+        "pole": [
+            0, 0, 0, 0, 0, 0],
+        "borderColor": "rgb(255, 0, 0)",
+        "borderDash": []
+    },
+    {
         "name": "FUC 111",
         "flag": "Czechia",
         "points": [
-            3, 0, "", "", "", ""],
+            3, 0, "DNS", "", "", ""],
         "points_sum": [
-            3, 3],
+            3, 3, 3],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -547,9 +659,9 @@
         "name": "BEC 133",
         "flag": "Slovakia",
         "points": [
-            "DNS", 0, "", "", "", ""],
+            "DNS", 0, "DNS", "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
@@ -563,9 +675,9 @@
         "name": "BEC 155",
         "flag": "Slovakia",
         "points": [
-            "DNS", 0, "", "", "", ""],
+            "DNS", 0, "DNS", "", "", ""],
         "points_sum": [
-            0, 0],
+            0, 0, 0],
         "win": [
             0, 0, 0, 0, 0, 0],
         "podium": [
