@@ -178,6 +178,7 @@ table tr:last-child{
     color: var(--lightGray);
     text-align: center;
     flex-direction: column;
+    min-width: 128px;
 }
 
 .card a:hover{

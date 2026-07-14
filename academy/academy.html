@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academy</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html">Academy</a></h1>
+    <hr>
+    <div class="drivers"></div>
+    <h2>Drivers - Points</h2>
+    <div id="driversTable"></div>
+    <h2>Drivers - Graphs</h2>
+    <canvas id="driversChart"></canvas>
+    <hr>
+    <div class="teams"></div>
+    <h2>Teams - Points</h2>
+    <div id="teamsTable"></div>
+    <h2>Teams - Graphs</h2>
+    <canvas id="teamsChart"></canvas>
+    <script>
+        createDriversChart(['GAD 3', 'BRU 4', 'FEL 5', 'BAT 6', 'PAA 8', 'WES 9', 'LAR 12', 'BIL 14', 'FER 18', 'GRA 19', 'LLO 20', 'PAL 21', 'SHI 24', 'STE 28', 'KOS 32', 'DOB 55', 'ROB 56', 'FIS 77', 'COU 91', 'JAC 95'], 'driversChart');
+        createTeamsChart(['ART', 'CAM', 'HIT', 'MP_', 'PRE', 'ROD'], 'teamsChart');
+    </script>
+</body>
+</html>

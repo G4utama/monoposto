@@ -1,0 +1,72 @@
+[
+    {
+        "name": "China*",
+        "name_short": "CHN*",
+        "date": "14/03"
+    },
+    {
+        "name": "China",
+        "name_short": "CHN",
+        "date": "15/03"
+    },
+    {
+        "name": "Canada",
+        "name_short": "CAN",
+        "date": "23/05"
+    },
+    {
+        "name": "Canada*",
+        "name_short": "CAN*",
+        "date": "23/05"
+    },
+    {
+        "name": "Canada",
+        "name_short": "CAN",
+        "date": "24/05"
+    },
+    {
+        "name": "United_Kingdom*",
+        "name_short": "GBR*",
+        "date": "04/06"
+    },
+    {
+        "name": "United_Kingdom",
+        "name_short": "GBR",
+        "date": "05/06"
+    },
+    {
+        "name": "Netherlands*",
+        "name_short": "NLD*",
+        "date": "22/08"
+    },
+    {
+        "name": "Netherlands",
+        "name_short": "NLD",
+        "date": "23/08"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "24/10"
+    },
+    {
+        "name": "United_States_of_America*",
+        "name_short": "USA*",
+        "date": "24/10"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "25/10"
+    },
+    {
+        "name": "United_States_of_America*",
+        "name_short": "USA*",
+        "date": "20/11"
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "21/11"
+    }
+]
