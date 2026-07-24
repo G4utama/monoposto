@@ -65,7 +65,14 @@ table, canvas{
 }
 
 canvas{
+    display: block;
+}
+
+.chart{
     max-width: 1920px;
+    width: 100%;
+    margin: 2em auto;
+    overflow-x: auto;
 }
 
 #driversPosition, #teamsPosition, #driversTable, #teamsTable, #enginesTable{

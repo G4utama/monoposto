@@ -1,6 +1,11 @@
 const createEnginesChartData = async (engineNames, gp) => {
     const engines = await loadJsonData('data/engines.json');
     const filteredEngines = engines.filter(engine => engineNames.includes(engine.name) || engineNames.includes(engine.id));
+    
+    const maxPoints = Math.max(
+        ...filteredEngines.flatMap(engine => engine.points_sum)
+    );
+    
     const chartData = {
         labels: gp.map(gpData => gpData.name_short),
         datasets: filteredEngines.map(engine => ({
@@ -12,7 +17,8 @@ const createEnginesChartData = async (engineNames, gp) => {
             lineTension: 0
         }))
     };
-    return chartData;
+    
+    return { chartData, maxPoints };
 };
 
 const createEnginesChart = async (engineNames, elementId) => {
@@ -20,12 +26,24 @@ const createEnginesChart = async (engineNames, elementId) => {
     const gp = await loadJsonData('data/gp.json');
     if (!engines || !gp) return;
 
-    const chartData = await createEnginesChartData(engineNames, gp);
-    const ctx = document.getElementById(elementId).getContext('2d');
+    const { chartData, maxPoints } = await createEnginesChartData(engineNames, gp);
+
+    const pxPerColumn = 64;
+    const pxPerPoint = 2;
+    const minWidth = 720;
+    const maxWidth = 1080;
+    const minHeight = 720;
+    const canvas = document.getElementById(elementId);
+    canvas.width = Math.max(minWidth, chartData.labels.length * pxPerColumn);
+    canvas.height = Math.min(maxWidth, (Math.max(minHeight, maxPoints * pxPerPoint)));
+
+    const ctx = canvas.getContext('2d');
     const enginesChart = new Chart(ctx, {
         type: 'line',
         data: chartData,
         options: {
+            responsive: false,
+            maintainAspectRatio: false,
             legend: {
                 labels: {
                     fontColor: 'rgba(255, 255, 255, 0.75)'

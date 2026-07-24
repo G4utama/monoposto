@@ -32,11 +32,17 @@
         <p class="dsq">DSQ: Disqualified</p>
     </div> -->
     <h2>Graphs</h2>
-    <canvas id="teamsChart"></canvas>
+    <div class="chart">
+        <canvas id="teamsChart"></canvas>
+    </div>
     <h2>Top Teams</h2>
-    <canvas id="teamsChartTop"></canvas>
+    <div class="chart">
+        <canvas id="teamsChartTop"></canvas>
+    </div>
     <h2>Bottom Teams</h2>
-    <canvas id="teamsChartBottom"></canvas>
+    <div class="chart">
+        <canvas id="teamsChartBottom"></canvas>
+    </div>
     <script>
         createTeamsChart(['ALP', 'AST', 'AUD', 'CAD', 'FER', 'HAA', 'MCL', 'MER', 'RAC', 'RED', 'WIL'], 'teamsChart');
         createTeamsChart(['FER', 'MCL','MER', 'RED'], 'teamsChartTop');
