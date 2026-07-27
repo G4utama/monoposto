@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monoposto_</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
+    <script src="../script/enginesTable.js"></script>
+    <script src="../script/enginesChart.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html">Monoposto_</a></h1>
+    <hr>
+    <div class="drivers"></div>
+    <h2>Drivers - Points</h2>
+    <div id="driversTable"></div>
+    <h2>Drivers - Graphs</h2>
+    <div class="chart">
+        <canvas id="driversChart"></canvas>
+    </div>
+    <hr>
+    <div class="teams"></div>
+    <h2>Teams - Points</h2>
+    <div id="teamsTable"></div>
+    <h2>Teams - Graphs</h2>
+    <div class="chart">
+        <canvas id="teamsChart"></canvas>
+    </div>
+    <script>
+        createDriversChart(['BOR 5', 'GAS 10', 'PER 11', 'ALO 14', 'STR 18', 'ALB 23', 'HUL 27', 'LAW 30', 'OCO 31', 'LIN 41', 'COL 43', 'SAI 55', 'BOT 77', 'BEA 87'], 'driversChart');
+        createTeamsChart(['ALP', 'AST', 'AUD', 'CAD', 'HAA', 'RAC', 'WIL'], 'teamsChart');
+    </script>
+</body>
+</html>
