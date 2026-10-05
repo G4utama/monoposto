@@ -5,6 +5,7 @@
 
 :root{
     --background: rgba(0, 0, 0, 0.9);
+    --solidBackground: #1a1a1a;
     --darkGray: rgba(255, 255, 255, 0.25);
     --lightGray: rgba(255, 255, 255, 0.75);
 }
@@ -110,12 +111,47 @@ table tr th:last-child, table tr td:last-child, table tr th:nth-last-child(2), t
     border-left: 3px solid var(--lightGray);
 }
 
-table tr:first-child{
+/* table tr:first-child{
     border-bottom: 3px solid var(--lightGray);
 }
 
 table tr:last-child{
     border-bottom: 3px solid rgba(255, 255, 255, 0);
+} */
+
+table:not(#archiveTable){
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table:not(#archiveTable) tr:first-child > *{
+    border-bottom: 3px solid var(--lightGray);
+}
+
+table:not(#archiveTable) tr:last-child > *{
+    border-bottom-color: transparent;
+}
+
+table:not(#archiveTable) tr > :nth-child(-n+2), table:not(#archiveTable) tr > :nth-last-child(-n+2){
+    position: sticky;
+    z-index: 1;
+    background-color: var(--solidBackground);
+}
+
+table:not(#archiveTable) tr > :nth-child(1){
+    left: 0;
+}
+
+table:not(#archiveTable) tr > :nth-child(2){
+    left: 64px;
+}
+
+table:not(#archiveTable) tr > :nth-last-child(2){
+    right: 64px;
+}
+
+table:not(#archiveTable) tr > :nth-last-child(1){
+    right: 0;
 }
 
 #archiveTable{
