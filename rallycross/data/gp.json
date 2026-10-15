@@ -2,36 +2,43 @@
     {
         "name": "Latvia",
         "name_short": "LVA",
-        "date": "10/05"
+        "date": "10/05",
+        "max_driver": 40
     },
     {
         "name": "Hungary",
         "name_short": "HUN",
-        "date": "31/05"
+        "date": "31/05",
+        "max_driver": 40
     },
     {
         "name": "Sweden",
         "name_short": "SWE",
-        "date": "05/07"
+        "date": "05/07",
+        "max_driver": 40
     },
     {
         "name": "Ireland",
         "name_short": "IRL",
-        "date": "19/07"
+        "date": "19/07",
+        "max_driver": 40
     },
     {
         "name": "France",
         "name_short": "FRA",
-        "date": "30/08"
+        "date": "30/08",
+        "max_driver": 40
     },
     {
         "name": "Portugal",
         "name_short": "POR",
-        "date": "13/09"
+        "date": "13/09",
+        "max_driver": 40
     },
     {
         "name": "Portugal",
         "name_short": "POR",
-        "date": "13/09"
+        "date": "13/09",
+        "max_driver": 40
     }
 ]

@@ -3,7 +3,29 @@ const createEnginesTable = async () => {
     const gp = await loadJsonData('data/gp.json');
     if (!engines || !gp) return;
 
-    engines.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
+    const sumAt = (d, i) => d.points_sum[i] ?? 0;
+    const lastIdx = Math.max(...engines.map(d => d.points_sum.length)) - 1;
+
+    // Standings after the previous round (computed on a copy, before the main sort)
+    const prevRank = {};
+    if (lastIdx > 0) {
+        [...engines]
+            .sort((a, b) => sumAt(b, lastIdx - 1) - sumAt(a, lastIdx - 1))
+            .forEach((d, i) => (prevRank[d.name] = i + 1));
+    }
+
+    // Current standings
+    engines.sort((a, b) => sumAt(b, lastIdx) - sumAt(a, lastIdx));
+
+    // Pos change
+    const posArrow = (engine, index) => {
+        const prev = prevRank[engine.name];
+        if (!prev) return '';
+        const now = index + 1;
+        if (now < prev) return `<span class="pos-up">▲</span>`;
+        if (now > prev) return `<span class="pos-down">▼</span>`;
+        return '';
+    };
 
     const tableHtml = `
         <table>
@@ -21,7 +43,7 @@ const createEnginesTable = async () => {
                 <th>Gap</th>
             </tr>
             ${engines.map((engine, index) => `
-                <td>${index + 1}</td>
+                <td>${index + 1}${posArrow(engine, index)}</td>
                 <td style="color: ${engine.borderColor};">${engine.name}<sub>${engine.teams.length}</sub> <img style="width: 16px;" src="../assets/flag/${engine.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style="
                     color: ${

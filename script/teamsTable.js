@@ -3,7 +3,45 @@ const createTeamsTable = async () => {
     const gp = await loadJsonData('data/gp.json');
     if (!teams || !gp) return;
 
-    teams.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
+    const sumAt = (d, i) => d.points_sum[i] ?? 0;
+    const lastIdx = Math.max(...teams.map(d => d.points_sum.length)) - 1;
+
+    // Standings after the previous round (computed on a copy, before the main sort)
+    const prevRank = {};
+    if (lastIdx > 0) {
+        [...teams]
+            .sort((a, b) => sumAt(b, lastIdx - 1) - sumAt(a, lastIdx - 1))
+            .forEach((d, i) => (prevRank[d.name] = i + 1));
+    }
+
+    // Current standings
+    teams.sort((a, b) => sumAt(b, lastIdx) - sumAt(a, lastIdx));
+
+    // Pos change
+    const posArrow = (team, index) => {
+        const prev = prevRank[team.name];
+        if (!prev) return '';
+        const now = index + 1;
+        if (now < prev) return `<span class="pos-up">▲</span>`;
+        if (now > prev) return `<span class="pos-down">▼</span>`;
+        return '';
+    };
+
+    // Points still available in the rounds
+    const maxPerWeekend = (gpData, type = 'team') => gpData[`max_${type}`] ?? 0;
+    const remainingPts = gp
+        .slice(lastIdx + 1)
+        .reduce((sum, g) => sum + maxPerWeekend(g, 'team'), 0);
+
+    const leaderPts = sumAt(teams[0], lastIdx);
+    const secondPts = sumAt(teams[1], lastIdx);
+
+    const titleStatus = (team, index) => {
+        const pts = sumAt(team, lastIdx);
+        if (index === 0 && pts > secondPts + remainingPts) return 'champion'; // clinched
+        if (pts + remainingPts < leaderPts) return 'out';                     // mathematically eliminated
+        return 'alive';
+    };
 
     const tableHtml = `
         <table>
@@ -22,7 +60,12 @@ const createTeamsTable = async () => {
             </tr>
             <tr>
                 ${teams.map((team, index) => `
-                <td>${index + 1}</td>
+                ${(() => {
+                    const status = titleStatus(team, index);
+                    return `<td class="title-${status}" title="Max possible: ${sumAt(team, lastIdx) + remainingPts}">
+                        ${index + 1}${posArrow(team, index)}
+                    </td>`;
+                })()}
                 <td style="color: ${team.borderColor};">${team.name} <img style="width: 16px;" src="../assets/flag/${team.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style="
                     color: ${

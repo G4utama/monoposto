@@ -2,41 +2,57 @@
     {
         "name": "Italy",
         "name_short": "ITA",
-        "date": "19/04"
+        "date": "19/04",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Belgium",
         "name_short": "BEL",
-        "date": "09/05"
+        "date": "09/05",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "France",
         "name_short": "FRA",
-        "date": "14/06"
+        "date": "14/06",
+        "max_driver": 50,
+        "max_team": 86
     },
     {
         "name": "Brazil",
         "name_short": "BRA",
-        "date": "12/07"
+        "date": "12/07",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": "06/09"
+        "date": "06/09",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Japan",
         "name_short": "JPN",
-        "date": "27/09"
+        "date": "27/09",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Qatar",
         "name_short": "QAT",
-        "date": "24/10"
+        "date": "24/10",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Bahrain",
         "name_short": "BAH",
-        "date": "07/11"
+        "date": "07/11",
+        "max_driver": 25,
+        "max_team": 43
     }
 ]

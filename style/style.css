@@ -177,6 +177,30 @@ table:not(#archiveTable) tr > :nth-last-child(1){
     width: 48px;
 }
 
+.pos-up   {
+    color: green;
+    font-size: 0.7em;
+    margin-left: 2px;
+}
+
+.pos-down {
+    color: red;
+    font-size: 0.7em;
+    margin-left: 2px;
+}
+
+.title-champion {
+    color: rgba(255, 255, 0, 75);
+}
+
+.title-alive {
+    color: rgba(0, 255, 0, 0.75);
+}
+
+/* .title-out {
+    color: rgba(255, 255, 255, 0.5);
+} */
+
 /* #driversTable, #teamsTable{
     box-sizing: border-box;
 } */

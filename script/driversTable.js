@@ -3,7 +3,45 @@ const createDriversTable = async () => {
     const gp = await loadJsonData('data/gp.json');
     if (!drivers || !gp) return;
 
-    drivers.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
+    const sumAt = (d, i) => d.points_sum[i] ?? 0;
+    const lastIdx = Math.max(...drivers.map(d => d.points_sum.length)) - 1;
+
+    // Standings after the previous round (computed on a copy, before the main sort)
+    const prevRank = {};
+    if (lastIdx > 0) {
+        [...drivers]
+            .sort((a, b) => sumAt(b, lastIdx - 1) - sumAt(a, lastIdx - 1))
+            .forEach((d, i) => (prevRank[d.name] = i + 1));
+    }
+
+    // Current standings
+    drivers.sort((a, b) => sumAt(b, lastIdx) - sumAt(a, lastIdx));
+
+    // Pos change
+    const posArrow = (driver, index) => {
+        const prev = prevRank[driver.name];
+        if (!prev) return '';
+        const now = index + 1;
+        if (now < prev) return `<span class="pos-up">▲</span>`;
+        if (now > prev) return `<span class="pos-down">▼</span>`;
+        return '';
+    };
+
+    // Points still available in the rounds
+    const maxPerWeekend = (gpData, type = 'driver') => gpData[`max_${type}`] ?? 0;
+    const remainingPts = gp
+        .slice(lastIdx + 1)
+        .reduce((sum, g) => sum + maxPerWeekend(g, 'driver'), 0);
+
+    const leaderPts = sumAt(drivers[0], lastIdx);
+    const secondPts = sumAt(drivers[1], lastIdx);
+
+    const titleStatus = (driver, index) => {
+        const pts = sumAt(driver, lastIdx);
+        if (index === 0 && pts > secondPts + remainingPts) return 'champion'; // clinched
+        if (pts + remainingPts < leaderPts) return 'out';                     // mathematically eliminated
+        return 'alive';
+    };
 
     const tableHtml = `
         <table>
@@ -22,7 +60,12 @@ const createDriversTable = async () => {
             </tr>
             <tr>
                 ${drivers.map((driver, index) => ` 
-                <td>${index + 1}</td>
+                ${(() => {
+                    const status = titleStatus(driver, index);
+                    return `<td class="title-${status}" title="Max possible: ${sumAt(driver, lastIdx) + remainingPts}">
+                        ${index + 1}${posArrow(driver, index)}
+                    </td>`;
+                })()}
                 <td style="color: ${driver.borderColor};">${driver.name.slice(0,3)}<sub>${driver.name.slice(4,7)}</sub> <img style="width: 16px;" src="../assets/flag/${driver.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style=" 
                     color: ${

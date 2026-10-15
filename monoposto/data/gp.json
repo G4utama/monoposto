@@ -2,145 +2,203 @@
     {
         "name": "Australia",
         "name_short": "AUS",
-        "date": "08/03"
+        "date": "08/03",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "China*",
         "name_short": "CHN*",
-        "date": "14/03"
+        "date": "14/03",
+        "max_driver": 8,
+        "max_team": 15
     },
     {
         "name": "China",
         "name_short": "CHN",
-        "date": "15/03"
+        "date": "15/03",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Japan",
         "name_short": "JPN",
-        "date": "29/03"
+        "date": "29/03",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "United_States_of_America*",
         "name_short": "USA*",
-        "date": "02/05"
+        "date": "02/05",
+        "max_driver": 8,
+        "max_team": 15
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": "03/05"
+        "date": "03/05",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Canada*",
         "name_short": "CAN*",
-        "date": "23/05"
+        "date": "23/05",
+        "max_driver": 8,
+        "max_team": 15
     },{
         "name": "Canada",
         "name_short": "CAN",
-        "date": "24/05"
+        "date": "24/05",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Monaco",
         "name_short": "MCO",
-        "date": "07/06"
+        "date": "07/06",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Spain",
         "name_short": "ESP",
-        "date": "14/06"
+        "date": "14/06",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Austria",
         "name_short": "AUT",
-        "date": "28/06"
+        "date": "28/06",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "United_Kingdom*",
         "name_short": "GBR*",
-        "date": "04/07"
+        "date": "04/07",
+        "max_driver": 8,
+        "max_team": 15
     },
     {
         "name": "United_Kingdom",
         "name_short": "GBR",
-        "date": "05/07"
+        "date": "05/07",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Belgium",
         "name_short": "BEL",
-        "date": "19/07"
+        "date": "19/07",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Hungary",
         "name_short": "HUN",
-        "date": "26/07"
+        "date": "26/07",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Netherlands*",
         "name_short": "NLD*",
-        "date": "22/08"
+        "date": "22/08",
+        "max_driver": 8,
+        "max_team": 15
     },
     {
         "name": "Netherlands",
         "name_short": "NLD",
-        "date": "23/08"
+        "date": "23/08",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Italy",
         "name_short": "ITA",
-        "date": "06/09"
+        "date": "06/09",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Spain",
         "name_short": "ESP",
-        "date": "13/09"
+        "date": "13/09",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Azerbaijan",
         "name_short": "AZE",
-        "date": "26/09"
+        "date": "26/09",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Bahrain",
         "name_short": "BAH",
-        "date": "04/10"
+        "date": "04/10",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Singapore*",
         "name_short": "SGP*",
-        "date": "10/10"
+        "date": "10/10",
+        "max_driver": 8,
+        "max_team": 15
     },
     {
         "name": "Singapore",
         "name_short": "SGP",
-        "date": "11/10"
+        "date": "11/10",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": "25/10"
+        "date": "25/10",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Mexico",
         "name_short": "MEX",
-        "date": "01/11"
+        "date": "01/11",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Brazil",
         "name_short": "BRA",
-        "date": "08/11"
+        "date": "08/11",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "United_States_of_America",
         "name_short": "USA",
-        "date": "21/11"
+        "date": "21/11",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "Qatar",
         "name_short": "QAT",
-        "date": "29/11"
+        "date": "29/11",
+        "max_driver": 25,
+        "max_team": 43
     },
     {
         "name": "United_Arab_Emirates",
         "name_short": "UAE",
-        "date": "06/12"
+        "date": "06/12",
+        "max_driver": 25,
+        "max_team": 43
     }
 ]
