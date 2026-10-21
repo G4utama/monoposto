@@ -1,11 +1,25 @@
-/* h1, h2{
-    font-size: 2em;
+table:is(.stats-4, .stats-4 table){
+    /* & tr > :nth-last-child(-n+6){
+        position: sticky;
+        z-index: 1;
+        background-color: var(--solidBackground);
+    } */
+    & tr > :nth-last-child(6){ right: calc(var(--cell) * 5); }
+    & tr > :nth-last-child(5){ right: calc(var(--cell) * 4); }
+    & tr > :nth-last-child(4){ right: calc(var(--cell) * 3); }
+    & tr > :nth-last-child(3){ right: calc(var(--cell) * 2); }
 }
 
-table{
-    font-size: 0.7em;
+table:is(.stats-2, .stats-2 table){
+    /* & tr > :nth-last-child(-n+4){
+        position: sticky;
+        z-index: 1;
+        background-color: var(--solidBackground);
+    } */
+    & tr > :nth-last-child(4){ right: calc(var(--cell) * 3); }
+    & tr > :nth-last-child(3){ right: calc(var(--cell) * 2); }
 }
 
-.flag img{
-    display: none;
-} */
+table:is(#nextGpTable, #nextGpTable table){
+    & th, & td{ padding: 0.5em 0.75em; }
+}

@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +12,14 @@
     --solidBackground: #1a1a1a;
     --darkGray: rgba(255, 255, 255, 0.25);
     --lightGray: rgba(255, 255, 255, 0.75);
+    --hover: rgba(255, 255, 255, 0.06);
+
+    /* tables */
+    --cell: 64px;                        /* one column; keep in sync with PX_PER_COLUMN / "* 64" in the JS */
+    --rule: 3px solid var(--lightGray);  /* thick divider lines */
+    --hair: 1px solid var(--lightGray);  /* thin divider lines */
+    --up: rgb(0, 255, 0);
+    --down: rgb(255, 0, 0);
 }
 
 html{
@@ -34,16 +46,11 @@ hr{
 
 h1{
     font-size: 2em;
-    /* text-shadow:
-    -1px -1px 0 red,
-    1px -1px 0 red,
-    -1px 1px 0 red,
-    1px 1px 0 red; */
 }
 
 h2{
     font-size: 1.5em;
-    margin-top: 1em;
+    margin: 0.5em 0em;
 }
 
 a, a:hover{
@@ -51,22 +58,9 @@ a, a:hover{
     color: var(--lightGray);
 }
 
-/* div{
-    position: relative;
-	width: 100%; 
-} */
-
-img{
-    border-radius: 3px;
-}
-
-table, canvas{
-    margin: 2em auto;
-    /* justify-content: center; */
-}
-
 canvas{
     display: block;
+    margin: 2em auto;
 }
 
 .chart{
@@ -76,158 +70,229 @@ canvas{
     overflow-x: auto;
 }
 
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/* ---- Shared by every table ---- */
+
+table{
+    max-width: 1920px;
+    width: 100%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    display: flex;           /* a display:table box can't scroll; flex lets overflow-x work */
+    overflow-x: auto;
+}
+
+th, td{
+    box-sizing: border-box;
+    min-width: var(--cell);
+    max-width: var(--cell);
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 1px solid var(--lightGray);
+}
+
+/* elements that carry these ids are centered with auto margins (no vertical margin) */
 #driversPosition, #teamsPosition, #driversTable, #teamsTable, #enginesTable{
     margin: auto;
 }
 
-/* #driversPosition div, #teamsPosition div{
-    min-height: 100px;
-    max-height: 100px;
-} */
-
-table{
-    max-width: 1920px;
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;   
-    overflow-x: auto;
-    display: flex;
+/* flags */
+.flag img, .flagMini img{
+    width: 32px;
+    border: 1px solid var(--darkGray);
+    border-radius: 3px;
 }
 
-th, td{
-    text-align: center;
-    border-bottom: 1px solid var(--lightGray);
-    padding: 0.5em;
-    min-width: 64px;
-    max-width: 64px;
-    box-sizing: border-box;
+.flagMini img{
+    border-radius: 2px;
 }
 
-table tr th:first-child, table tr td:first-child, table tr th:nth-child(2), table tr td:nth-child(2){
-    border-right: 3px solid var(--lightGray);
+/* position change arrows */
+.pos-up{
+    color: var(--up);
+    font-size: 0.7em;
+    margin-left: 2px;
 }
 
-table tr th:last-child, table tr td:last-child, table tr th:nth-last-child(2), table tr td:nth-last-child(2){
-    border-left: 3px solid var(--lightGray);
+.pos-down{
+    color: var(--down);
+    font-size: 0.7em;
+    margin-left: 2px;
 }
 
-/* table tr:first-child{
-    border-bottom: 3px solid var(--lightGray);
-}
 
-table tr:last-child{
-    border-bottom: 3px solid rgba(255, 255, 255, 0);
-} */
+/* ---- Standings: drivers / teams / engines (every table except archive + next GP) ---- */
 
-table:not(#archiveTable){
-    border-collapse: separate;
+table:not(#archiveTable, #archiveTable table, #nextGpTable, #nextGpTable table){
+    border-collapse: separate;     /* needed for borders on sticky cells */
     border-spacing: 0;
+
+    /* thick line under the header row, none under the last row */
+    & tr:first-child > *{ border-bottom: var(--rule); }
+    & tr:last-child > *{ border-bottom-color: transparent; }
+
+    /* thick dividers next to the first two and last two columns */
+    & tr > :nth-child(-n+2){ border-right: var(--rule); }
+    & tr > :nth-last-child(-n+2){ border-left: var(--rule); }
+
+    /* those four columns stay visible while scrolling sideways */
+    & tr > :nth-child(-n+2),
+    & tr > :nth-last-child(-n+2){
+        position: sticky;
+        z-index: 1;
+        background-color: var(--solidBackground);
+    }
+    & tr > :nth-child(1){ left: 0; }
+    & tr > :nth-child(2){ left: var(--cell); }
+    & tr > :nth-last-child(2){ right: var(--cell); }
+    & tr > :nth-last-child(1){ right: 0; }
 }
 
-table:not(#archiveTable) tr:first-child > *{
-    border-bottom: 3px solid var(--lightGray);
+
+/* ---- Standings with extra stat columns before Pts / Gap ----
+   The JS adds "stats-4" (drivers: Win, Pole, Pod, DNF) or "stats-2" (teams: Pod, DNF).
+   The stat columns get a thin divider and, like Pos / D / Pts / Gap, stay fixed while scrolling
+   on wider screens. On narrow screens the fixed columns would take the whole width, so only
+   Pos / D / Pts / Gap stay fixed there and the stat columns scroll. */
+
+table:is(.stats-4, .stats-4 table){
+    & tr > :nth-last-child(n+3):nth-last-child(-n+6){ border-left: var(--hair); }
 }
 
-table:not(#archiveTable) tr:last-child > *{
-    border-bottom-color: transparent;
+table:is(.stats-2, .stats-2 table){
+    & tr > :nth-last-child(n+3):nth-last-child(-n+4){ border-left: var(--hair); }
 }
 
-table:not(#archiveTable) tr > :nth-child(-n+2), table:not(#archiveTable) tr > :nth-last-child(-n+2){
-    position: sticky;
-    z-index: 1;
-    background-color: var(--solidBackground);
-}
 
-table:not(#archiveTable) tr > :nth-child(1){
-    left: 0;
-}
-
-table:not(#archiveTable) tr > :nth-child(2){
-    left: 64px;
-}
-
-table:not(#archiveTable) tr > :nth-last-child(2){
-    right: 64px;
-}
-
-table:not(#archiveTable) tr > :nth-last-child(1){
-    right: 0;
-}
+/* ---- Archive ---- */
 
 #archiveTable{
     display: inline-block;
 }
 
+/* header: Drivers | Year | Teams */
+#archiveTable th:nth-child(-n+2){ border-right: var(--rule); }
+#archiveTable th:nth-last-child(-n+2){ border-left: var(--rule); }
+
 #archiveTable td{
     min-width: 96px;
-    border-top: 3px solid var(--lightGray);
-    border-right: none;
-    border-left: none;
+    max-width: 96px;
+    border-top: var(--rule);
 }
 
-#archiveTable td:nth-child(3), #archiveTable td:nth-child(4){
-    border-right: 3px solid var(--lightGray);
+#archiveTable td:nth-child(3),
+#archiveTable td:nth-child(4){
+    border-right: var(--rule);
 }
 
 #archiveTable img{
     margin: 4px 0;
 }
 
-#archiveTable td:nth-child(1) img, #archiveTable td:nth-child(2) img, #archiveTable td:nth-child(6) img, #archiveTable td:nth-child(7) img{
+#archiveTable td:nth-child(1) img,
+#archiveTable td:nth-child(2) img,
+#archiveTable td:nth-child(6) img,
+#archiveTable td:nth-child(7) img{
     width: 48px;
 }
 
-.pos-up   {
-    color: green;
-    font-size: 0.7em;
-    margin-left: 2px;
+
+/* ---- Next GP (index page) ---- */
+/* Works whether #nextGpTable is the <table> itself or a wrapper around it. */
+
+table:is(#nextGpTable, #nextGpTable table){
+    display: block;                /* box that scrolls sideways on small screens... */
+    max-width: 720px;
+    overflow-x: auto;
+
+    & tbody{                       /* ...around a real table with fixed, wider columns */
+        display: table;
+        width: 100%;
+        min-width: 480px;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    & th, & td{
+        min-width: 0;
+        max-width: none;
+        padding: 0.75em 1.5em;
+        white-space: nowrap;
+    }
+
+    /* Series | Round | Next GP | Date */
+    & th:nth-child(1){ width: 30%; }
+    & th:nth-child(2){ width: 20%; }
+    & th:nth-child(3){ width: 30%; }
+    & th:nth-child(4){ width: 20%; }
+
+    /* same header / last-row treatment as the standings tables */
+    & tr:first-child > *{ border-bottom: var(--rule); }
+    & tr:last-child > *{ border-bottom-color: transparent; }
+
+    & th{
+        font-size: 0.8em;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    & tr:hover td{ background-color: var(--hover); }
+
+    & td:first-child a{ font-weight: bold; }
+    & td:first-child a:hover{ text-decoration: underline; }
+
+    /* series logo */
+    & td:first-child img{
+        height: 1.8em;
+        width: auto;
+        max-width: 3em;
+        margin-right: 0.5em;
+        object-fit: contain;
+        vertical-align: middle;
+    }
+
+    & td.flag img{
+        margin-right: 0.5em;
+        vertical-align: middle;
+    }
+
+    /* "Sprint" tag */
+    & td.flag small{
+        margin-left: 0.5em;
+        padding: 1px 7px;
+        border-radius: 999px;
+        background-color: var(--darkGray);
+        font-size: 0.7em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    & td.seasonComplete{
+        color: var(--darkGray);
+    }
 }
 
-.pos-down {
-    color: red;
-    font-size: 0.7em;
-    margin-left: 2px;
-}
 
-.title-champion {
-    color: rgba(255, 255, 0, 75);
-}
-
-.title-alive {
-    color: rgba(0, 255, 0, 0.75);
-}
-
-/* .title-out {
-    color: rgba(255, 255, 255, 0.5);
-} */
-
-/* #driversTable, #teamsTable{
-    box-sizing: border-box;
-} */
-
-/* table tr:last-child{
-    border-bottom: none;
-} */
-
-.flag th{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.flag img{
-    width: 32px;
-    border: 1px solid var(--darkGray);
-}
+/* ==========================================================================
+   Position bars
+   ========================================================================== */
 
 #driversPosition, #teamsPosition{
     display: flex;
     overflow-x: auto;
-    /* justify-content: center; */
 }
 
-/* Cards */
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
 
 .card{
     display: flex;
@@ -260,10 +325,6 @@ table:not(#archiveTable) tr > :nth-last-child(1){
     padding-bottom: 2px;
 }
 
-.card h2{
-    margin-bottom: 0.5em;
-}
-
 .drivers p, .teams p, .engines p{
     margin-top: 0.5em;
 }
@@ -290,7 +351,10 @@ table:not(#archiveTable) tr > :nth-last-child(1){
     border-bottom: 8px solid var(--lightGray);
 }
 
-/* Legend */
+
+/* ==========================================================================
+   Legend
+   ========================================================================== */
 
 .legend{
     text-align: center;
@@ -305,7 +369,6 @@ table:not(#archiveTable) tr > :nth-last-child(1){
 .podium{
     background-color: rgba(255, 128, 0, 0.25);
     padding: 1px 3px;
-    /* display: inline; */
 }
 
 .pole{
@@ -316,9 +379,8 @@ table:not(#archiveTable) tr > :nth-last-child(1){
 .sprint{
     background-color: rgba(255, 255, 255, 0.05);
     padding: 1px 3px;
-    /* display: inline; */
 }
 
 .dnf, .dsq, .dns{
-    color:rgba(255, 0, 0, 0.5);
+    color: rgba(255, 0, 0, 0.5);
 }

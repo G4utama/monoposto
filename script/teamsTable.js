@@ -6,6 +6,18 @@ const createTeamsTable = async () => {
     const sumAt = (d, i) => d.points_sum[i] ?? 0;
     const lastIdx = Math.max(...teams.map(d => d.points_sum.length)) - 1;
 
+    // Stat columns. Sprints are separate entries in gp.json ("China*"): the big number counts
+    // races only, and the sprint count goes in a <small> next to it (hidden when it is 0).
+    const isSprint = (i) => gp[i]?.name.endsWith('*');
+    const stat = (arr, test, label) => {
+        const race = arr.filter((v, i) => test(v) && !isSprint(i)).length;
+        const sprint = arr.filter((v, i) => test(v) && isSprint(i)).length;
+        const dim = race + sprint === 0 ? 'rgba(255, 255, 255, 0.25)' : '';
+        const small = sprint ? `<small>+${sprint}</small>` : '';
+        const title = sprint ? ` title="${race} ${label} in races, ${sprint} in sprints"` : '';
+        return `<td style="color: ${dim};"${title}>${race}${small}</td>`;
+    };
+
     // Standings after the previous round (computed on a copy, before the main sort)
     const prevRank = {};
     if (lastIdx > 0) {
@@ -55,6 +67,8 @@ const createTeamsTable = async () => {
                         <small>${gpData.date}</small>
                     </th>
                 `).join('')}
+                <th>Pod</th>
+                <th>DNF</th>
                 <th>Tot</th>
                 <th>Gap</th>
             </tr>
@@ -62,11 +76,18 @@ const createTeamsTable = async () => {
                 ${teams.map((team, index) => `
                 ${(() => {
                     const status = titleStatus(team, index);
-                    return `<td class="title-${status}" title="Max possible: ${sumAt(team, lastIdx) + remainingPts}">
+                    return `<td style="
+                    background-color: ${
+                        status === 'champion' ? `rgba(127, 127, 0, 1)` :
+                        status === 'alive' ? `rgba(0, 63, 0, 1)` :
+                        status === 'out' ? `rgba(63, 0, 0, 1)` :
+                        ''
+                    };
+                    " title="Max possible: ${sumAt(team, lastIdx) + remainingPts}">
                         ${index + 1}${posArrow(team, index)}
                     </td>`;
                 })()}
-                <td style="color: ${team.borderColor};">${team.name} <img style="width: 16px;" src="../assets/flag/${team.flag}.png"></td>
+                <td class="flagMini" style="color: ${team.borderColor};">${team.name} <img style="width: 16px;" src="../assets/flag/${team.flag}.png"></td>
                 ${gp.map((gpData, index) => `<td style="
                     color: ${
                         team.firstSecond[index] === 1 ? team.borderColor : 
@@ -88,6 +109,8 @@ const createTeamsTable = async () => {
                         ''
                     };
                 ">${team.points[index]}</td>`).join('')}
+                ${stat(team.podium, v => v === 1, 'podiums')}
+                ${stat(team.points, v => v === 'DNF', 'DNFs')}
                 <td style="color: ${team.borderColor};">${team.points_sum[team.points_sum.length - 1]}</td>
                 <td style="color: ${team.borderColor};">
                     ${index > 0
@@ -104,7 +127,8 @@ const createTeamsTable = async () => {
 
     document.getElementById('teamsTable').innerHTML = tableHtml;
 
-    document.getElementById('teamsTable').style.maxWidth = `${(gp.length + 4) * 64}px`;
+    document.getElementById('teamsTable').style.maxWidth = `${(gp.length + 6) * 64}px`;
+    document.getElementById('teamsTable').classList.add('stats-2'); // 2 stat columns (Pod, DNF) before Tot / Gap
 };
 
 createTeamsTable();

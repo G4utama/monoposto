@@ -15,7 +15,7 @@ const createArchiveTable = async () => {
                         <p>${data.driver.slice(4, 7)}</p>
                         <img src="../assets/teams/${data.driver.slice(4, 7)}-car.png">
                     </td>
-                    <td style="background: rgba(${data.driverColor.slice(4, -1)}, 0.25)">
+                    <td class="flag" style="background: rgba(${data.driverColor.slice(4, -1)}, 0.25)">
                         <img src="../assets/flag/${data.driverFlag}.png">
                     </td>
                     <td style="background: rgba(${data.driverColor.slice(4, -1)}, 0.25)">
@@ -29,7 +29,7 @@ const createArchiveTable = async () => {
                         <p>${data.team}</p>
                         ${data.team ? `<img src="../assets/teams/${data.team}-car.png">` : ''}
                     </td>
-                    <td style="background: rgba(${data.teamColor.slice(4, -1)}, 0.25)">
+                    <td class="flag" style="background: rgba(${data.teamColor.slice(4, -1)}, 0.25)">
                         ${data.teamFlag ? `<img src="../assets/flag/${data.teamFlag}.png">` : ''}
                     </td>
                     

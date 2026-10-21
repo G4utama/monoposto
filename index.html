@@ -5,13 +5,13 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" type="text/css" href="style/mobile.css" media="screen and (max-width: 1080px)">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="script/dataLoader.js"></script>
     <script src="script/driverCard.js"></script>
     <script src="script/teamsCard.js"></script>
-    <script src="script/enginesCard.js"></script>
 </head>
 <body>
     <h1>Monoposto</h1>
@@ -25,10 +25,6 @@
             <h2>Teams</h2>
             <div class="teams"></div>
         </a>
-        <a href="monoposto/engines.html">
-            <h2>Engines</h2>
-            <div class="engines"></div>
-        </a>
     </div>
     <div class="card">
         <a href="monoposto_/monoposto_.html">
@@ -41,6 +37,7 @@
         </a>
     </div>
     <hr>
+    <h2>Other</h2>
     <div class="card">
         <a href="monopostoE/monopostoE.html">
             <h2>Monoposto E</h2>
@@ -65,5 +62,9 @@
             <img src="assets/Rallycross.png">
         </a>
     </div>
+    <hr>
+    <h2>Next GP</h2>
+    <div id="nextGpTable"></div>
+    <script src="script/nextGpTable.js"></script>
 </body>
 </html>

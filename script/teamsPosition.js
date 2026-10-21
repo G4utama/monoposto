@@ -1,4 +1,4 @@
-const createDriversPosition = async () => {
+const createTeamsPosition = async () => {
     const teams = await loadJsonData('data/teams.json');
     teams.sort((a, b) => b.points_sum[b.points_sum.length - 1] - a.points_sum[a.points_sum.length - 1]);
 
@@ -19,4 +19,4 @@ const createDriversPosition = async () => {
     document.getElementById('teamsPosition').style.maxWidth = `${teams.length * 64}px`;
 };
 
-createDriversPosition();
+createTeamsPosition();

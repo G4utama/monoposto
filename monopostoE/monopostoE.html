@@ -5,6 +5,7 @@
     <link rel="icon" type="image/png" href="../assets/logo.png">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
@@ -13,8 +14,6 @@
     <script src="../script/driversChart.js"></script>
     <script src="../script/teamsTable.js"></script>
     <script src="../script/teamsChart.js"></script>
-    <script src="../script/enginesTable.js"></script>
-    <script src="../script/enginesChart.js"></script>
 </head>
 <body>
     <h1><a href="../index.html">Monoposto E</a></h1>
@@ -34,18 +33,9 @@
     <div class="chart">
         <canvas id="teamsChart"></canvas>
     </div>
-    <hr>
-    <div class="engines"></div>
-    <h2>Engines - Points</h2>
-    <div id="enginesTable"></div>
-    <h2>Engines - Graphs</h2>
-    <div class="chart">
-        <canvas id="enginesChart"></canvas>
-    </div>
     <script>
         createDriversChart(['ROW 1', 'MAR 3', 'GUN 7', 'EVA 9', 'DIG 11', 'DAC 13', 'ERI 14', 'BUE 16', 'DEV 21', 'MAL 22', 'NAT 23', 'VER 25', 'DEN 27', 'DRU 28', 'TIC 33', 'CAS 37', 'MOR 48', 'MUL 51', 'BAR 77', 'WEH 94'], 'driversChart');
         createTeamsChart(['AND', 'CIT', 'CUP', 'DS_', 'ENV', 'JAG', 'LOL', 'MAH', 'NIS', 'POR'], 'teamsChart');
-        createEnginesChart(['CIT', 'DS_', 'JAG', 'LOL', 'MAH', 'NIS', 'POR'], 'enginesChart');
     </script>
 </body>
 </html>
