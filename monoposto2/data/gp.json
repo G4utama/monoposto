@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Australia*",
+        "name_short": "AUS*",
+        "date": "07/03",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Australia",
+        "name_short": "AUS",
+        "date": "08/03",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "United_States_of_America*",
+        "name_short": "USA*",
+        "date": "02/05",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "United_States_of_America",
+        "name_short": "USA",
+        "date": "03/05",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Canada*",
+        "name_short": "CAN*",
+        "date": "23/05",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Canada",
+        "name_short": "CAN",
+        "date": "24/05",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Monaco*",
+        "name_short": "MCO*",
+        "date": "06/06",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Monaco",
+        "name_short": "MCO",
+        "date": "07/06",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Spain*",
+        "name_short": "ESP*",
+        "date": "13/06",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Spain",
+        "name_short": "ESP",
+        "date": "14/06",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Austria*",
+        "name_short": "AUT*",
+        "date": "27/06",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Austria",
+        "name_short": "AUT",
+        "date": "28/06",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "United_Kingdom*",
+        "name_short": "GBR*",
+        "date": "04/07",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "United_Kingdom",
+        "name_short": "GBR",
+        "date": "05/07",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Belgium*",
+        "name_short": "BEL*",
+        "date": "18/07",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Belgium",
+        "name_short": "BEL",
+        "date": "19/07",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Hungary*",
+        "name_short": "HUN*",
+        "date": "25/07",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Hungary",
+        "name_short": "HUN",
+        "date": "26/07",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Italy*",
+        "name_short": "ITA*",
+        "date": "05/09",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Italy",
+        "name_short": "ITA",
+        "date": "06/09",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Spain*",
+        "name_short": "ESP*",
+        "date": "12/09",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Spain",
+        "name_short": "ESP",
+        "date": "13/09",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Azerbaijan*",
+        "name_short": "AZE*",
+        "date": "25/09",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Azerbaijan",
+        "name_short": "AZE",
+        "date": "25/09",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Azerbaijan",
+        "name_short": "AZE",
+        "date": "26/09",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "Qatar*",
+        "name_short": "QAT*",
+        "date": "28/11",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "Qatar",
+        "name_short": "QAT",
+        "date": "29/11",
+        "max_driver": 28,
+        "max_team": 46
+    },
+    {
+        "name": "United_Arab_Emirates*",
+        "name_short": "UAE*",
+        "date": "05/12",
+        "max_driver": 11,
+        "max_team": 19
+    },
+    {
+        "name": "United_Arab_Emirates",
+        "name_short": "UAE",
+        "date": "06/12",
+        "max_driver": 28,
+        "max_team": 46
+    }
+]

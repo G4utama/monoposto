@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monoposto2</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/mobile.css" media="screen and (max-width: 1080px)">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../script/dataLoader.js"></script>
+    <script src="../script/recolor.js"></script>
+    <script src="../script/positionBars.js"></script>
+    <script src="../script/driversCard.js"></script>
+    <script src="../script/driversTable.js"></script>
+    <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsCard.js"></script>
+    <script src="../script/teamsTable.js"></script>
+    <script src="../script/teamsChart.js"></script>
+</head>
+<body>
+    <h1><a href="../index.html">Monoposto2</a></h1>
+    <hr>
+    <h2>Drivers - Points</h2>
+    <div class="drivers" data-template="driverW"></div>
+    <div id="driversTable"></div>
+    <h2>Drivers - Graphs</h2>
+    <div class="chart">
+        <canvas id="driversChart"></canvas>
+    </div>
+    <hr>
+    <h2>Teams - Points</h2>
+    <div class="teams"></div>
+    <div id="teamsTable"></div>
+    <h2>Teams - Graphs</h2>
+    <div class="chart">
+        <canvas id="teamsChart"></canvas>
+    </div>
+    <script>
+        createDriversChart(['CAM 1', 'DUR 2', 'MIY 3', 'HER 4', 'LEO 5', 'TSO 6', 'BEG 7', 'BIL 8', 'MIN 9', 'GOE 10', 'MON 11', 'BOY 12', 'STE 14', 'DUN 15', 'MAI 16', 'INT 17', 'FIT 20', 'SHI 21', 'VAR 22', 'YAM 22', 'VIL 23', 'HOE 24', 'BEN 25'], 'driversChart');
+        createTeamsChart(['AIX', 'ART', 'CAM', 'DAM', 'HIT', 'INV', 'MP_', 'PRE', 'ROD', 'TRI', 'VAN'], 'teamsChart');
+    </script>
+</body>
+</html>
