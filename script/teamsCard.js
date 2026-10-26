@@ -1,4 +1,4 @@
-fetch('monoposto/data/teams.json')
+fetch('data/teams.json')
 .then(response => response.json())
 .then(data => {
     // Sort the teams based on their points_sum values in descending order
@@ -13,7 +13,7 @@ fetch('monoposto/data/teams.json')
     const teamElement2 = document.createElement('div');
     teamElement2.classList.add('team', `team2`, `team${team2.name.slice(0, 3)}`);
     teamElement2.innerHTML = `
-		<img src="assets/teams/${team2.name.slice(0, 3)}-car.png" alt="team">
+		<img data-recolor="../assets/templates/${container.dataset.template ?? 'car'}.png" data-color="${team2.borderColor}" width="64" height="64" alt="team">
 		<p style="color: ${team2.borderColor};">${team2.name.slice(0, 3)}</p>
 		<p>${team2.points_sum[team2.points_sum.length - 1]}</p>`;
     container.appendChild(teamElement2);
@@ -23,7 +23,7 @@ fetch('monoposto/data/teams.json')
     const teamElement1 = document.createElement('div');
     teamElement1.classList.add('team', `team1`, `team${team1.name.slice(0, 3)}`);
     teamElement1.innerHTML = `
-		<img src="assets/teams/${team1.name.slice(0, 3)}-car.png" alt="team">
+		<img data-recolor="../assets/templates/${container.dataset.template ?? 'car'}.png" data-color="${team1.borderColor}" width="64" height="64" alt="team">
 		<p style="color: ${team1.borderColor};">${team1.name.slice(0, 3)}</p>
 		<p>${team1.points_sum[team1.points_sum.length - 1]}</p>`;
     container.appendChild(teamElement1);
@@ -33,9 +33,11 @@ fetch('monoposto/data/teams.json')
     const teamElement3 = document.createElement('div');
     teamElement3.classList.add('team', `team3`, `team${team3.name.slice(0, 3)}`);
     teamElement3.innerHTML = `
-		<img src="assets/teams/${team3.name.slice(0, 3)}-car.png" alt="team">
+		<img data-recolor="../assets/templates/${container.dataset.template ?? 'car'}.png" data-color="${team3.borderColor}" width="64" height="64" alt="team">
 		<p	style="color: ${team3.borderColor};">${team3.name.slice(0, 3)}</p>
 		<p>${team3.points_sum[team3.points_sum.length - 1]}</p>`;
     container.appendChild(teamElement3);
+
+    recolorAll(container); // colour the template images with each team's borderColor
 })
 .catch(error => console.error(error));

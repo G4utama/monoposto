@@ -1,4 +1,4 @@
-fetch('monoposto/data/drivers.json')
+fetch('data/drivers.json')
 .then(response => response.json())
 .then(data => {
 	// Sort the drivers based on their points_sum values in descending order
@@ -13,7 +13,7 @@ fetch('monoposto/data/drivers.json')
 	const driverElement2 = document.createElement('div');
 	driverElement2.classList.add('driver', `driver2`, `driver${driver2.name.slice(0, 3)}`);
 	driverElement2.innerHTML = `
-		<img src="assets/drivers/${driver2.name.slice(0, 3)}.png" alt="driver">
+		<img data-recolor="../assets/templates/${container.dataset.template ?? 'driver'}.png" data-color="${driver2.borderColor}" width="64" height="64" alt="driver">
 		<p style="color: ${driver2.borderColor};">${driver2.name.slice(0, 3)}</p>
 		<p>${driver2.points_sum[driver2.points_sum.length - 1]}</p>`;
 	container.appendChild(driverElement2);
@@ -23,7 +23,7 @@ fetch('monoposto/data/drivers.json')
 	const driverElement1 = document.createElement('div');
 	driverElement1.classList.add('driver', `driver1`, `driver${driver1.name.slice(0, 3)}`);
 	driverElement1.innerHTML = `
-		<img src="assets/drivers/${driver1.name.slice(0, 3)}.png" alt="driver">
+		<img data-recolor="../assets/templates/${container.dataset.template ?? 'driver'}.png" data-color="${driver1.borderColor}" width="64" height="64" alt="driver">
 		<p style="color: ${driver1.borderColor};">${driver1.name.slice(0, 3)}</p>
 		<p>${driver1.points_sum[driver1.points_sum.length - 1]}</p>`;
 	container.appendChild(driverElement1);
@@ -33,10 +33,12 @@ fetch('monoposto/data/drivers.json')
 	const driverElement3 = document.createElement('div');
 	driverElement3.classList.add('driver', `driver3`, `driver${driver3.name.slice(0, 3)}`);
 	driverElement3.innerHTML = `
-		<img src="assets/drivers/${driver3.name.slice(0, 3)}.png" alt="driver">
+		<img data-recolor="../assets/templates/${container.dataset.template ?? 'driver'}.png" data-color="${driver3.borderColor}" width="64" height="64" alt="driver">
 		<p style="color: ${driver3.borderColor};">${driver3.name.slice(0, 3)}</p>
 		<p>${driver3.points_sum[driver3.points_sum.length - 1]}</p>`;
 	container.appendChild(driverElement3);
+
+	recolorAll(container); // colour the template images with each driver's borderColor
 
 })
 .catch(error => console.error(error));

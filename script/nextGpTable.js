@@ -7,6 +7,7 @@
 const NEXT_GP_SPORTS = [
     { label: 'Monoposto',   folder: 'monoposto',  page: 'monoposto/drivers.html' },
     // { label: 'Monoposto_',  folder: 'monoposto_', page: 'monoposto_/monoposto_.html' },
+    { label: 'Monoposto 2', folder: 'monoposto2', page: 'monoposto2/monoposto2.html' },
     { label: 'Monoposto E', folder: 'monopostoE', page: 'monopostoE/monopostoE.html' },
     { label: 'Academy',     folder: 'academy',    page: 'academy/academy.html' },
     { label: 'Moto',        folder: 'moto',       page: 'moto/moto.html' },

@@ -50,7 +50,7 @@ h1{
 
 h2{
     font-size: 1.5em;
-    margin: 0.5em 0em;
+    margin: 0.5em 0em 1em 0em;
 }
 
 a, a:hover{
@@ -273,10 +273,6 @@ table:is(#nextGpTable, #nextGpTable table){
         text-transform: uppercase;
         vertical-align: middle;
     }
-
-    & td.seasonComplete{
-        color: var(--darkGray);
-    }
 }
 
 
@@ -289,6 +285,10 @@ table:is(#nextGpTable, #nextGpTable table){
     overflow-x: auto;
 }
 
+/* recoloured pixel-art templates (see recolor.js) */
+img[data-recolor]{
+    image-rendering: pixelated;
+}
 
 /* ==========================================================================
    Cards

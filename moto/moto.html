@@ -10,24 +10,28 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="../script/dataLoader.js"></script>
+    <script src="../script/recolor.js"></script>
+    <script src="../script/positionBars.js"></script>
+    <script src="../script/driversCard.js"></script>
     <script src="../script/driversTable.js"></script>
     <script src="../script/driversChart.js"></script>
+    <script src="../script/teamsCard.js"></script>
     <script src="../script/teamsTable.js"></script>
     <script src="../script/teamsChart.js"></script>
 </head>
 <body>
     <h1><a href="../index.html">Moto</a></h1>
     <hr>
-    <div class="drivers"></div>
     <h2>Drivers - Points</h2>
+    <div class="drivers"></div>
     <div id="driversTable"></div>
     <h2>Drivers - Graphs</h2>
     <div class="chart">
         <canvas id="driversChart"></canvas>
     </div>
     <hr>
-    <div class="teams"></div>
     <h2>Teams - Points</h2>
+    <div class="teams" data-template="moto"></div>
     <div id="teamsTable"></div>
     <h2>Teams - Graphs</h2>
     <div class="chart">
