@@ -42,16 +42,16 @@
         "max_team": 43
     },
     {
-        "name": "Qatar",
-        "name_short": "QAT",
-        "date": "24/10",
+        "name": "Spain",
+        "name_short": "ESP",
+        "date": "18/10",
         "max_driver": 25,
         "max_team": 43
     },
     {
-        "name": "Bahrain",
-        "name_short": "BAH",
-        "date": "07/11",
+        "name": "Italy",
+        "name_short": "ITA",
+        "date": "08/11",
         "max_driver": 25,
         "max_team": 43
     }
