@@ -1,5 +1,14 @@
 [
     {
+        "year": "2026",
+        "driver": "ANT-MER",
+        "driverFlag": "Italy",
+        "driverColor": "rgb(39, 244, 210)",
+        "team": "MER",
+        "teamFlag": "Germany",
+        "teamColor": "rgb(39, 244, 210)"
+    },
+    {
         "year": "2025",
         "driver": "NOR-MCL",
         "driverFlag": "United_Kingdom",
